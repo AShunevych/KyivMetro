@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="red_Line">Red Line</string>
+    <string name="Akademmistechko">Akademmistechko</string>
+    <string name="Zhytomyrska">Zhytomyrska</string>
+    <string name="Sviatoshyn">Sviatoshyn</string>
+    <string name="Nyvky">Nyvky</string>
+    <string name="Beresteiska">Beresteiska</string>
+    <string name="Shuliavska">Shuliavska</string>
+    <string name="Politekhnichnyi_Instytut">Politekhn.\nInstytut</string>
+    <string name="PolitechJSON">Politekhnichnyi Instytut</string>
+    <string name="Vokzalna">Vokzalna</string>
+    <string name="Universytet">Universytet</string>
+    <string name="Teatralna">Teatralna</string>
+    <string name="Khreshchatyk">Khreshchatyk</string>
+    <string name="Arsenalna">Arsenalna</string>
+    <string name="Dnipro">Dnipro</string>
+    <string name="Hidropark">Hidropark</string>
+    <string name="Livoberezhna">Livoberezhna</string>
+    <string name="Darnytsia">Darnytsia</string>
+    <string name="Chernihivska">Chernihivska</string>
+    <string name="Lisova">Lisova</string>
+</resources>

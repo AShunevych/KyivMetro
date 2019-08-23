@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <string name="blue_line">Blue Line</string>
+    <string name="Heroiv_Dnipra">Heroiv Dnipra</string>
+    <string name="Minska">Minska</string>
+    <string name="Obolon">Obolon</string>
+    <string name="Pochaina">Pochaina</string>
+    <string name="Tarasa_Shevchenka">Tarasa\nShevchenka</string>
+    <string name="Kontraktova">Kontraktova\nPloshcha</string>
+    <string name="Poshtova">Poshtova\nPloshcha</string>
+    <string name="Maidan">Maidan\nNezalezhnosti</string>
+    <string name="Lva">Ploshcha\nLva Tolstoho </string>
+    <string name="LvaShort">Ploshcha\nL.Tolstoho </string>
+    <string name="Olimpiiska">Olimpiiska</string>
+    <string name="Palats">Palats Ukrayina</string>
+    <string name="Lybidska">Lybidska</string>
+    <string name="Demiivska">Demiivska</string>
+    <string name="Holosiivska">Holosiivska</string>
+    <string name="Vasylkivska">Vasylkivska</string>
+    <string name="Vystavkovyi">Vystavkovyi centr</string>
+    <string name="Ipodrom">Ipodrom</string>
+    <string name="Teremky">Teremky</string>
+
+    <string name="ShevchenkaJSON">Tarasa Shevchenka</string>
+    <string name="KontraktovaJSON">Kontraktova Ploshcha</string>
+    <string name="PoshtovaJSON">Poshtova Ploshcha</string>
+    <string name="MaidanJSON">Maidan Nezalezhnosti</string>
+    <string name="LvaJSON">Ploshcha Lva Tolstoho</string>
+    <string name="VystavkovyiJSON">Vystavkovyi centr</string>
+</resources>

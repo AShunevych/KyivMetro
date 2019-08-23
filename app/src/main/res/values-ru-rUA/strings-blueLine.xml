@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <string name="blue_line">СИНЯ\nГІЛКА</string>
+    <string name="Heroiv_Dnipra">Героїв Дніпра</string>
+    <string name="Minska">Мінська</string>
+    <string name="Obolon">Оболонь</string>
+    <string name="Pochaina">Почайна</string>
+    <string name="Tarasa_Shevchenka">Тараса\nШевченка</string>
+    <string name="Kontraktova">Контрактова\nплоща</string>
+    <string name="Poshtova">Поштова\nплоща</string>
+    <string name="Maidan">Майдан\nНезалежності</string>
+    <string name="Lva">Площа\nЛьва Толстого </string>
+    <string name="LvaShort">Площа\nЛ.Толстого </string>
+    <string name="Olimpiiska">Олімпійська</string>
+    <string name="Palats">Палац "Україна"</string>
+    <string name="Lybidska">Либідська</string>
+    <string name="Demiivska">Деміївська</string>
+    <string name="Holosiivska">Голосіівська</string>
+    <string name="Vasylkivska">Василівська</string>
+    <string name="Vystavkovyi">Виставковий\nцентр</string>
+    <string name="Ipodrom">Іподром</string>
+    <string name="Teremky">Теремки</string>
+
+    <string name="ShevchenkaJSON">Тараса Шевченка</string>
+    <string name="KontraktovaJSON">Контрактова Площа</string>
+    <string name="PoshtovaJSON">Поштова Площа</string>
+    <string name="MaidanJSON">Майдан Незалежності</string>
+    <string name="LvaJSON">Площа Льва Толстого</string>
+    <string name="VystavkovyiJSON">Виставковий центр</string>
+    </resources>

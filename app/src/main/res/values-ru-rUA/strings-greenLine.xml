@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="green_line">ЗЕЛЕНА\nГІЛКА</string>
+    <string name="Syrets">Сирець</string>
+    <string name="Dorohozhychi">Дорогожичі</string>
+    <string name="Lukianivska">Лук\'янівська</string>
+    <string name="Vorota">Золоті ворота </string>
+    <string name="PalatsSportu">Палац спорту</string>
+    <string name="Klovska">Кловська</string>
+    <string name="Pecherska">Печерська</string>
+    <string name="druzhby">Дружби Народів</string>
+    <string name="Vydubychi">Видубичі</string>
+    <string name="Slavutych">Славутич</string>
+    <string name="Osokorky">Осокорки</string>
+    <string name="Pozniaky">Позняки</string>
+    <string name="Kharkivska">Харківська</string>
+    <string name="Vyrlytsia">Вирлиця</string>
+    <string name="Boryspilska">Бориспільська</string>
+    <string name="Chervony_Khutir">Червоний Хутір</string>
+
+    <string name="DruzhbyJSON">Дружби Народів</string>
+    <string name="KhutirJSON">Червоний Хутір</string>
+</resources>

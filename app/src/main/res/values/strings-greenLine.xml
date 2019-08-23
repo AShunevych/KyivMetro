@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="green_line">Green Line</string>
+    <string name="Syrets">Syrets</string>
+    <string name="Dorohozhychi">Dorohozhychi</string>
+    <string name="Lukianivska">Lukianivska</string>
+    <string name="Vorota">Zoloti Vorota </string>
+    <string name="PalatsSportu">Palats Sportu</string>
+    <string name="Klovska">Klovska</string>
+    <string name="Pecherska">Pecherska</string>
+    <string name="druzhby">Druzhby Narodiv</string>
+    <string name="Vydubychi">Vydubychi</string>
+    <string name="Slavutych">Slavutych</string>
+    <string name="Osokorky">Osokorky</string>
+    <string name="Pozniaky">Pozniaky</string>
+    <string name="Kharkivska">Kharkivska</string>
+    <string name="Vyrlytsia">Vyrlytsia</string>
+    <string name="Boryspilska">Boryspilska</string>
+    <string name="Chervony_Khutir">Chervony Khutir</string>
+
+    <string name="DruzhbyJSON">Druzhby Narodiv</string>
+    <string name="KhutirJSON">Chervony Khutir</string>
+
+</resources>

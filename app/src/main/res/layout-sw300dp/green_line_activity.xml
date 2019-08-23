@@ -1,0 +1,581 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:id="@+id/redLine_Fragment_Scroll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@id/divider3"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="0dp">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="21dp"
+                android:layout_height="28dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/ic_green_to_red"
+                app:layout_constraintBottom_toBottomOf="@+id/textView3"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/textView3"
+                app:layout_constraintVertical_bias="0.49" />
+
+            <Button
+                android:id="@+id/button4"
+                android:layout_width="21dp"
+                android:layout_height="28dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/ic_green_to_blue"
+                app:layout_constraintBottom_toBottomOf="@+id/textView4"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/textView4"
+                app:layout_constraintVertical_bias="0.49" />
+
+            <View
+                android:id="@+id/view1"
+                android:layout_width="8dp"
+                android:layout_height="18dp"
+                android:background="@drawable/green_rect"
+                app:layout_constraintEnd_toEndOf="@+id/Syrets"
+                app:layout_constraintStart_toStartOf="@+id/Syrets"
+                app:layout_constraintTop_toBottomOf="@+id/Syrets" />
+
+            <View
+                android:id="@+id/view2"
+                android:layout_width="8dp"
+                android:layout_height="18dp"
+                android:background="@drawable/green_rect"
+                app:layout_constraintEnd_toEndOf="@+id/Syrets"
+                app:layout_constraintStart_toStartOf="@+id/Syrets"
+                app:layout_constraintTop_toBottomOf="@+id/doroh" />
+
+            <View
+                android:id="@+id/view3"
+                style="@style/Rectangle_long"
+                android:background="@drawable/green_rect"
+                app:layout_constraintEnd_toEndOf="@+id/Syrets"
+                app:layout_constraintStart_toStartOf="@+id/Syrets"
+                app:layout_constraintTop_toBottomOf="@+id/lukyanivska" />
+
+            <View
+                android:id="@+id/view4"
+                style="@style/Rectangle_long"
+                android:background="@drawable/green_rect"
+                app:layout_constraintEnd_toEndOf="@+id/Syrets"
+                app:layout_constraintStart_toStartOf="@+id/Syrets"
+                app:layout_constraintTop_toBottomOf="@+id/vorota"
+                tools:layout_editor_absoluteX="14dp" />
+
+            <View
+                android:id="@+id/view5"
+                style="@style/Rectangle_long"
+                android:background="@drawable/green_rect"
+                app:layout_constraintEnd_toEndOf="@+id/Syrets"
+                app:layout_constraintStart_toStartOf="@+id/Syrets"
+                app:layout_constraintTop_toBottomOf="@+id/palats" />
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="8dp"
+                android:layout_height="18dp"
+                android:background="@drawable/green_rect"
+                app:layout_constraintEnd_toEndOf="@+id/Syrets"
+                app:layout_constraintStart_toStartOf="@+id/Syrets"
+                app:layout_constraintTop_toBottomOf="@+id/klovska" />
+
+            <View
+                android:id="@+id/view6"
+                style="@style/Rectangle_long"
+                android:background="@drawable/green_rect"
+                app:layout_constraintEnd_toEndOf="@+id/Syrets"
+                app:layout_constraintStart_toStartOf="@+id/Syrets"
+                app:layout_constraintTop_toBottomOf="@+id/pecherska" />
+
+            <View
+                android:id="@+id/view7"
+                style="@style/Rectangle_long"
+                android:background="@drawable/green_rect"
+                app:layout_constraintEnd_toEndOf="@+id/Syrets"
+                app:layout_constraintStart_toStartOf="@+id/Syrets"
+                app:layout_constraintTop_toBottomOf="@+id/druzby" />
+
+            <View
+                android:id="@+id/view13"
+                android:layout_width="8dp"
+                android:layout_height="18dp"
+                android:background="@drawable/green_rect"
+                app:layout_constraintEnd_toEndOf="@+id/Syrets"
+                app:layout_constraintStart_toStartOf="@+id/Syrets"
+                app:layout_constraintTop_toBottomOf="@+id/vydubychi" />
+
+            <View
+                android:id="@+id/view14"
+                android:layout_width="8dp"
+                android:layout_height="18dp"
+                android:background="@drawable/green_rect"
+                app:layout_constraintEnd_toEndOf="@+id/Syrets"
+                app:layout_constraintStart_toStartOf="@+id/Syrets"
+                app:layout_constraintTop_toBottomOf="@+id/slavutych" />
+
+            <View
+                android:id="@+id/view15"
+                android:layout_width="8dp"
+                android:layout_height="18dp"
+                android:background="@drawable/green_rect"
+                app:layout_constraintEnd_toEndOf="@+id/Syrets"
+                app:layout_constraintStart_toStartOf="@+id/Syrets"
+                app:layout_constraintTop_toBottomOf="@+id/osokorky" />
+
+            <View
+                android:id="@+id/view16"
+                android:layout_width="8dp"
+                android:layout_height="18dp"
+                android:background="@drawable/green_rect"
+                app:layout_constraintEnd_toEndOf="@+id/Syrets"
+                app:layout_constraintStart_toStartOf="@+id/Syrets"
+                app:layout_constraintTop_toBottomOf="@+id/pozniaky" />
+
+            <View
+                android:id="@+id/view17"
+                android:layout_width="8dp"
+                android:layout_height="18dp"
+                android:background="@drawable/green_rect"
+                app:layout_constraintEnd_toEndOf="@+id/Syrets"
+                app:layout_constraintStart_toStartOf="@+id/Syrets"
+                app:layout_constraintTop_toBottomOf="@+id/kharkiv" />
+
+            <View
+                android:id="@+id/view18"
+                android:layout_width="8dp"
+                android:layout_height="18dp"
+                android:background="@drawable/green_rect"
+                app:layout_constraintEnd_toEndOf="@+id/Syrets"
+                app:layout_constraintStart_toStartOf="@+id/Syrets"
+                app:layout_constraintTop_toBottomOf="@+id/vyrlytsia" />
+
+            <View
+                android:id="@+id/view19"
+                style="@style/Rectangle_long"
+                android:background="@drawable/green_rect"
+                app:layout_constraintEnd_toEndOf="@+id/Syrets"
+                app:layout_constraintStart_toStartOf="@+id/Syrets"
+                app:layout_constraintTop_toBottomOf="@+id/boryspil" />
+
+            <Button
+                android:id="@+id/doroh"
+                android:layout_width="19dp"
+                android:layout_height="20dp"
+                android:background="@drawable/ic_green_ring_svg"
+                app:layout_constraintEnd_toEndOf="@+id/Syrets"
+                app:layout_constraintStart_toStartOf="@+id/Syrets"
+                app:layout_constraintTop_toBottomOf="@+id/view1" />
+
+            <Button
+                android:id="@+id/lukyanivska"
+                android:layout_width="19dp"
+                android:layout_height="20dp"
+                android:background="@drawable/ic_green_ring_svg"
+                app:layout_constraintEnd_toEndOf="@+id/Syrets"
+                app:layout_constraintStart_toStartOf="@+id/Syrets"
+                app:layout_constraintTop_toBottomOf="@+id/view2" />
+
+            <Button
+                android:id="@+id/vorota"
+                android:layout_width="19dp"
+                android:layout_height="20dp"
+                android:background="@drawable/ic_green_ring_svg"
+                app:layout_constraintEnd_toEndOf="@+id/Syrets"
+                app:layout_constraintStart_toStartOf="@+id/Syrets"
+                app:layout_constraintTop_toBottomOf="@+id/view3" />
+
+            <Button
+                android:id="@+id/palats"
+                android:layout_width="19dp"
+                android:layout_height="20dp"
+                android:background="@drawable/ic_green_ring_svg"
+                app:layout_constraintEnd_toEndOf="@+id/Syrets"
+                app:layout_constraintStart_toStartOf="@+id/Syrets"
+                app:layout_constraintTop_toBottomOf="@+id/view4" />
+
+            <Button
+                android:id="@+id/klovska"
+                android:layout_width="19dp"
+                android:layout_height="20dp"
+                android:background="@drawable/ic_green_ring_svg"
+                app:layout_constraintEnd_toEndOf="@+id/Syrets"
+                app:layout_constraintStart_toStartOf="@+id/Syrets"
+                app:layout_constraintTop_toBottomOf="@+id/view5" />
+
+            <Button
+                android:id="@+id/pecherska"
+                android:layout_width="19dp"
+                android:layout_height="20dp"
+                android:background="@drawable/ic_green_ring_svg"
+                app:layout_constraintEnd_toEndOf="@+id/Syrets"
+                app:layout_constraintStart_toStartOf="@+id/Syrets"
+                app:layout_constraintTop_toBottomOf="@+id/view" />
+
+            <Button
+                android:id="@+id/druzby"
+                android:layout_width="19dp"
+                android:layout_height="20dp"
+                android:background="@drawable/ic_green_ring_svg"
+                app:layout_constraintEnd_toEndOf="@+id/Syrets"
+                app:layout_constraintStart_toStartOf="@+id/Syrets"
+                app:layout_constraintTop_toBottomOf="@+id/view6" />
+
+            <Button
+                android:id="@+id/slavutych"
+                android:layout_width="19dp"
+                android:layout_height="20dp"
+                android:background="@drawable/ic_green_ring_svg"
+                app:layout_constraintEnd_toEndOf="@+id/Syrets"
+                app:layout_constraintStart_toStartOf="@+id/Syrets"
+                app:layout_constraintTop_toBottomOf="@+id/view13" />
+
+            <Button
+                android:id="@+id/osokorky"
+                android:layout_width="19dp"
+                android:layout_height="20dp"
+                android:background="@drawable/ic_green_ring_svg"
+                app:layout_constraintEnd_toEndOf="@+id/Syrets"
+                app:layout_constraintStart_toStartOf="@+id/Syrets"
+                app:layout_constraintTop_toBottomOf="@+id/view14" />
+
+            <Button
+                android:id="@+id/pozniaky"
+                android:layout_width="19dp"
+                android:layout_height="20dp"
+                android:background="@drawable/ic_green_ring_svg"
+                app:layout_constraintEnd_toEndOf="@+id/Syrets"
+                app:layout_constraintStart_toStartOf="@+id/Syrets"
+                app:layout_constraintTop_toBottomOf="@+id/view15" />
+
+            <Button
+                android:id="@+id/kharkiv"
+                android:layout_width="19dp"
+                android:layout_height="20dp"
+                android:background="@drawable/ic_green_ring_svg"
+                app:layout_constraintEnd_toEndOf="@+id/Syrets"
+                app:layout_constraintStart_toStartOf="@+id/Syrets"
+                app:layout_constraintTop_toBottomOf="@+id/view16" />
+
+            <Button
+                android:id="@+id/vyrlytsia"
+                android:layout_width="19dp"
+                android:layout_height="20dp"
+                android:background="@drawable/ic_green_ring_svg"
+                app:layout_constraintEnd_toEndOf="@+id/Syrets"
+                app:layout_constraintStart_toStartOf="@+id/Syrets"
+                app:layout_constraintTop_toBottomOf="@+id/view17" />
+
+            <Button
+                android:id="@+id/boryspil"
+                android:layout_width="19dp"
+                android:layout_height="20dp"
+                android:background="@drawable/ic_green_ring_svg"
+                app:layout_constraintEnd_toEndOf="@+id/Syrets"
+                app:layout_constraintStart_toStartOf="@+id/Syrets"
+                app:layout_constraintTop_toBottomOf="@+id/view18" />
+
+            <Button
+                android:id="@+id/redhutir"
+                android:layout_width="19dp"
+                android:layout_height="20dp"
+                android:background="@drawable/ic_green_ring_end"
+                android:paddingBottom="4dp"
+                app:layout_constraintEnd_toEndOf="@+id/Syrets"
+                app:layout_constraintStart_toStartOf="@+id/Syrets"
+                app:layout_constraintTop_toBottomOf="@+id/view19" />
+
+            <Button
+                android:id="@+id/vydubychi"
+                android:layout_width="19dp"
+                android:layout_height="20dp"
+                android:background="@drawable/ic_green_ring_svg"
+                app:layout_constraintEnd_toEndOf="@+id/Syrets"
+                app:layout_constraintStart_toStartOf="@+id/Syrets"
+                app:layout_constraintTop_toBottomOf="@+id/view7" />
+
+            <Button
+                android:id="@+id/Syrets"
+                android:layout_width="19dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/ic_green_ring_start"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView36" />
+
+            <TextView
+                android:id="@+id/textView15"
+                style="@style/TextAppearance_FragmentText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_marginEnd="8dp"
+                android:drawableEnd="@drawable/ic_train_svg"
+                android:text="@string/Syrets"
+                app:layout_constraintBottom_toBottomOf="@+id/Syrets"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/Syrets"
+                app:layout_constraintTop_toTopOf="@+id/Syrets" />
+
+            <TextView
+                android:id="@+id/textView18"
+                style="@style/TextAppearance_FragmentText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="2dp"
+
+                android:text="@string/Dorohozhychi"
+                app:layout_constraintBottom_toBottomOf="@+id/doroh"
+                app:layout_constraintEnd_toEndOf="@+id/textView15"
+                app:layout_constraintStart_toEndOf="@+id/doroh"
+                app:layout_constraintTop_toTopOf="@+id/doroh"
+                app:layout_constraintVertical_bias="0.48000002" />
+
+            <TextView
+                android:id="@+id/textView2"
+                style="@style/TextAppearance_FragmentText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+
+                android:layout_marginStart="2dp"
+                android:layout_marginEnd="8dp"
+                android:text="@string/Lukianivska"
+                app:layout_constraintBottom_toBottomOf="@+id/lukyanivska"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/lukyanivska"
+                app:layout_constraintTop_toTopOf="@+id/lukyanivska" />
+
+            <TextView
+                android:id="@+id/textView3"
+                style="@style/TextAppearance_FragmentText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="2dp"
+                android:text="@string/Vorota"
+                app:layout_constraintBottom_toBottomOf="@+id/vorota"
+                app:layout_constraintEnd_toStartOf="@+id/button3"
+                app:layout_constraintStart_toEndOf="@+id/vorota"
+                app:layout_constraintTop_toTopOf="@+id/vorota" />
+
+            <TextView
+                android:id="@+id/textView5"
+                style="@style/TextAppearance_FragmentText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="2dp"
+
+                android:layout_marginTop="1dp"
+                android:layout_marginEnd="8dp"
+                android:text="@string/Klovska"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/klovska"
+                app:layout_constraintTop_toTopOf="@+id/klovska" />
+
+            <TextView
+                android:id="@+id/textView7"
+                style="@style/TextAppearance_FragmentText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="2dp"
+                android:layout_marginEnd="8dp"
+                android:text="@string/druzhby"
+                app:layout_constraintBottom_toBottomOf="@+id/druzby"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/druzby"
+                app:layout_constraintTop_toTopOf="@+id/druzby" />
+
+            <TextView
+                android:id="@+id/textView8"
+                style="@style/TextAppearance_FragmentText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="2dp"
+                android:layout_marginEnd="8dp"
+                android:drawableEnd="@drawable/ic_train_svg"
+                android:text="@string/Vydubychi"
+                app:layout_constraintBottom_toBottomOf="@+id/vydubychi"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/vydubychi"
+                app:layout_constraintTop_toTopOf="@+id/vydubychi" />
+
+            <TextView
+                android:id="@+id/textView9"
+                style="@style/TextAppearance_FragmentText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+
+                android:layout_marginStart="2dp"
+                android:layout_marginEnd="8dp"
+                android:text="@string/Slavutych"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/slavutych"
+                app:layout_constraintTop_toBottomOf="@+id/view13" />
+
+            <TextView
+                android:id="@+id/textView10"
+                style="@style/TextAppearance_FragmentText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+
+                android:layout_marginStart="2dp"
+                android:layout_marginEnd="8dp"
+                android:text="@string/Osokorky"
+                app:layout_constraintBottom_toBottomOf="@+id/osokorky"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/osokorky"
+                app:layout_constraintTop_toTopOf="@+id/osokorky" />
+
+            <TextView
+                android:id="@+id/textView11"
+                style="@style/TextAppearance_FragmentText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+
+                android:layout_marginStart="2dp"
+                android:layout_marginEnd="8dp"
+                android:text="@string/Pozniaky"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/pozniaky"
+                app:layout_constraintTop_toTopOf="@+id/pozniaky" />
+
+            <TextView
+                android:id="@+id/textView12"
+                style="@style/TextAppearance_FragmentText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="2dp"
+                android:layout_marginEnd="8dp"
+                android:text="@string/Kharkivska"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/kharkiv"
+                app:layout_constraintTop_toTopOf="@+id/kharkiv" />
+
+            <TextView
+                android:id="@+id/textView13"
+                style="@style/TextAppearance_FragmentText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="2dp"
+                android:layout_marginEnd="8dp"
+                android:text="@string/Vyrlytsia"
+                app:layout_constraintBottom_toBottomOf="@+id/vyrlytsia"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/vyrlytsia"
+                app:layout_constraintTop_toTopOf="@+id/vyrlytsia" />
+
+            <TextView
+                android:id="@+id/textView14"
+                style="@style/TextAppearance_FragmentText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="2dp"
+                android:layout_marginEnd="8dp"
+                android:text="@string/Boryspilska"
+                app:layout_constraintBottom_toBottomOf="@+id/boryspil"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/boryspil"
+                app:layout_constraintTop_toTopOf="@+id/boryspil"
+                app:layout_constraintVertical_bias="0.45" />
+
+            <TextView
+                android:id="@+id/textView17"
+                style="@style/TextAppearance_FragmentText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:paddingBottom="4dp"
+                android:text="@string/Chervony_Khutir"
+                app:layout_constraintBottom_toBottomOf="@+id/redhutir"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/textView14"
+                app:layout_constraintTop_toTopOf="@+id/redhutir"
+                app:layout_constraintVertical_bias="0.44" />
+
+            <TextView
+                android:id="@+id/textView6"
+                style="@style/TextAppearance_FragmentText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="2dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginEnd="8dp"
+                android:drawableEnd="@drawable/ic_train_svg"
+                android:text="@string/Pecherska"
+                app:layout_constraintBottom_toBottomOf="@+id/pecherska"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/pecherska"
+                app:layout_constraintTop_toTopOf="@+id/pecherska" />
+
+            <TextView
+                android:id="@+id/textView4"
+                style="@style/TextAppearance_FragmentText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="2dp"
+                android:layout_marginTop="2dp"
+                android:text="@string/PalatsSportu"
+                app:layout_constraintBottom_toBottomOf="@+id/palats"
+                app:layout_constraintEnd_toStartOf="@+id/button4"
+                app:layout_constraintStart_toEndOf="@+id/palats"
+                app:layout_constraintTop_toTopOf="@+id/palats" />
+
+            <TextView
+                android:id="@+id/textView36"
+                style="@style/TextAppearance_FragmentText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="8dp"
+                android:drawableStart="@drawable/ic_green_line_logo"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="@string/green_line_name"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </android.support.constraint.ConstraintLayout>
+    </ScrollView>
+
+    <View
+        android:id="@+id/divider3"
+        android:layout_width="2dp"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:background="?android:attr/listDivider" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignStart="@id/divider3"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true">
+
+        <fragment
+            android:id="@+id/informFragment"
+            android:name="ashunevich.kiyvmetroguide.InformationFragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:layout="@layout/information_layout" />
+    </ScrollView>
+
+</RelativeLayout>

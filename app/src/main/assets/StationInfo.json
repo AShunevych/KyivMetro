@@ -1,0 +1,522 @@
+{
+  "Heroiv Dnipra" : {
+    "Station": "Heroiv Dnipra",
+    "Line": "M2 (Blue) - Obolonsko–Teremkivska",
+    "Bus":"41, 73",
+    "Trolleybus": "32, 44",
+    "TaxicabUrban": "402, 441, 464, 485, 500, 559",
+    "TaxicabSuburban": "347, 349, 351, 354, 355, 397, 399, 421, 902, 991",
+    "Exit To":"Heroiv Dnipra street, Oblonskiy prospect",
+    "Notes"    : " -"
+  },
+  "Minska" : {
+    "Station"  : "Minska",
+    "Line": "M2 (Blue) - Obolonsko–Teremkivska",
+    "Bus":"73, 88, 99",
+    "Trolleybus": "24, 34, 47",
+    "TaxicabUrban": "224, 464, 472, 476, 485, 500, 530, 559",
+    "TaxicabSuburban": "395, 421",
+    "Exit To":"Oblonskiy prospect,Minska Square, Marshalla Tymoshenko street,",
+    "Notes"    : " -"
+  },
+  "Obolon" : {
+    "Station"  : "Obolon",
+    "Line": "M2 (Blue) - Obolonsko–Teremkivska",
+    "Bus":"73, 100, 102",
+    "Trolleybus": "44",
+    "TaxicabUrban": "180, 402, 463, 476, 500, 582",
+    "TaxicabSuburban": "395",
+    "Exit To":"Oblonskiy prospect,Oblonska Square,Marshalla Malynovskogo street",
+    "Notes"    : " -"
+  },
+  "Pochaina" : {
+    "Station"  : "Pochaina",
+    "Line": "M2 (Blue) - Obolonsko–Teremkivska",
+    "Bus":"21, 101",
+    "Trolleybus": "25, 27, 29, 30, 31, 34",
+    "TaxicabUrban": "150, 151, 155, 157, 183, 192, 234, 242, 410, 421, 463, 500, 525, 550, 598д",
+    "TaxicabSuburban": " - ",
+    "Exit To":"Oblonskiy prospect, Verbova street",
+    "Notes"    : "Railway station - Pochaina"
+  },
+  "Tarasa Shevchenka" : {
+    "Station"  : "Tarasa Shevchenka",
+    "Line": "M2 (Blue) - Obolonsko–Teremkivska",
+    "Bus":"72",
+    "Trolleybus": " - ",
+    "TaxicabUrban": "502",
+    "TaxicabSuburban": " - ",
+    "Exit To":"Streets: Mezhygirska, Olenivska",
+    "Notes"    : " -"
+  },
+  "Kontraktova Ploshcha" : {
+    "Station"  : "Kontraktova Ploshcha",
+    "Line": "M2 (Blue) - Obolonsko–Teremkivska",
+    "Bus":"53, 62, 72, 115, 119",
+    "Trolleybus": " - ",
+    "TaxicabUrban": "219, 417, 432, 502, 587",
+    "TaxicabSuburban": "302, 820 ",
+    "Exit To":"Kontraktova Square, Streets: Verhniy Val, Nizhniy Val, Kostyantinivska,Spaska ",
+    "Notes"    : " -"
+  },
+  "Poshtova Ploshcha" : {
+    "Station"  : "Poshtova Ploshcha",
+    "Line": "M2 (Blue) - Obolonsko–Teremkivska",
+    "Bus":"62, 114, 115 ",
+    "Trolleybus": " - ",
+    "TaxicabUrban": " - ",
+    "TaxicabSuburban": " - ",
+    "Exit To":"Uzvozu:Volodymyrskoho, Borycheva , Poshtova Square,  Petra Sahaydachnoho street",
+    "Notes"    : "Kiev Funicular, Kyiv River Port  "
+  },
+  "Maidan Nezalezhnosti" : {
+    "Station"  : "Maidan Nezalezhnosti",
+    "Line": "M2 (Blue) - Obolonsko–Teremkivska",
+    "Bus":"24, 114",
+    "Trolleybus": "6,16,18",
+    "TaxicabUrban": " - ",
+    "TaxicabSuburban": " - ",
+    "Exit To":"Maidan Nezalezhnosti,Khreshchatyk",
+    "Notes"    : "Transfer to «Khreshchatyk» station, Exit to city center"
+  },
+  "Ploshcha Lva Tolstoho" : {
+    "Station"  : "Ploshcha Lva Tolstoho",
+    "Line": "M2 (Blue) - Obolonsko–Teremkivska",
+    "Bus":"20",
+    "Trolleybus": "5, 7, 8, 17, 93Н, 94Н",
+    "TaxicabUrban": " - ",
+    "TaxicabSuburban": " - ",
+    "Exit To":"Lva Tolstoho Square/ Streets: Velyka Vasylkivska, Lva Tolstogo, Pushkinska",
+    "Notes"    : " Transfer to «Palats Sportu» station"
+  },
+  "Olimpiiska" : {
+    "Station"  : "Olimpiiska",
+    "Line": "M2 (Blue) - Obolonsko–Teremkivska",
+    "Bus":"5, 20, 69",
+    "Trolleybus": " - ",
+    "TaxicabUrban": "507, 539",
+    "TaxicabSuburban": "825",
+    "Exit To":"Streets: Velyka Vasylkivska, Phiskultury",
+    "Notes": "Olympic National Sports Complex"
+  },
+  "Palats Ukrayina" : {
+    "Station"  : "Palats Ukrayina",
+    "Line": "M2 (Blue) - Obolonsko–Teremkivska",
+    "Bus":"5, 20",
+    "Trolleybus": "12, 91Н",
+    "TaxicabUrban": "520,507,539",
+    "TaxicabSuburban": "825",
+    "Exit To":"Streets: Velykoyi Vasilkivskoyi, Volodymyro-Libidskoyi, Yevhena Konovaltsya, Tverskoyi, Nimetskoyi",
+    "Notes": " National Palace of Arts Ukraina"
+  },
+  "Lybidska" : {
+    "Station"  : "Lybidska",
+    "Line": "M2 (Blue) - Obolonsko–Teremkivska",
+    "Bus":"20, 27, 51, 52",
+    "Trolleybus": "1, 12, 42, 43, 50, 91Н",
+    "TaxicabUrban": "212, 239, 422, 457, 470, 507, 520, 539, 546, 557, 590 ",
+    "TaxicabSuburban": "729, 801, 812, 825 ",
+    "Exit To":"Streets: Velykoyi Vasilkivskoyi,Antonovycha,Ivana Kudri, Lybidska Square ",
+    "Notes"    : " -"
+  },
+  "Demiivska" : {
+    "Station"  : "Demiivska",
+    "Line": "M2 (Blue) - Obolonsko–Teremkivska",
+    "Bus":"5, 12, 19, 20, 27, 28, 39, 52, 91",
+    "Trolleybus": "1, 11, 12, 42, 43",
+    "TaxicabUrban": "205, 211, 212, 220, 239, 416, 422, 444, 457, 470, 477, 491, 507, 539, 546, 557",
+    "TaxicabSuburban": "729, 801, 812, 825",
+    "Exit To":"Demiivska square, prospekts:  Holosiyivskoho, Valeriya Lobanovskoho, Nauky",
+    "Notes"    : "Kiev Central Bus Station"
+  },
+  "Holosiivska" : {
+    "Station"  : "Holosiivska",
+    "Line": "M2 (Blue) - Obolonsko–Teremkivska",
+    "Bus":"1, 28, 39, 91",
+    "Trolleybus": "11, 12, 43",
+    "TaxicabUrban": "208, 416, 444, 491, 507, 546 ",
+    "TaxicabSuburban": "729, 80, 812, 825",
+    "Exit To":"Holosiivska Square, Holosiyivskiy prosperkt, Vasylkivska street",
+    "Notes"    : " -"
+  },
+  "Vasylkivska" : {
+    "Station"  : "Vasylkivska",
+    "Transfer": " M2 - Obolonsko–Teremkivska ",
+    "Bus":"19, 78, 119",
+    "Trolleybus": "12, 45",
+    "TaxicabUrban": "208, 491, 499, 546 ",
+    "TaxicabSuburban": "729, 812",
+    "Exit To":"Streets: Vasylkivska, Mykhaila Marsymovycha, Amurska Square",
+    "Notes"    : " -"
+  },
+  "Vystavkovyi centr" : {
+    "Station"  : "Vystavkovyi centr",
+    "Line": "M2 (Blue) - Obolonsko–Teremkivska",
+    "Bus":"1, 56, 75 ",
+    "Trolleybus": "11, 12, 43, 45",
+    "TaxicabUrban": "208, 212, 416, 444, 461, 491, 507",
+    "TaxicabSuburban": "172, 303, 371, 427, 718, 723, 724, 726д, 729, 732, 736, 739, 756, 757, 791, 801, 812, 825, 904 ",
+    "Exit To":"Streets: Vasylkivska / Prospekts; Akademika Glushkova,Holosiyivskiy",
+    "Notes"    : ""
+  },
+  "Ipodrom" : {
+    "Station"  : "Ipodrom",
+    "Line": "M2 (Blue) - Obolonsko–Teremkivska",
+    "Bus":"1, 56, 75 ",
+    "Trolleybus": "11, 12, 43, 45",
+    "TaxicabUrban": "208, 212, 416, 444, 461, 491, 507",
+    "TaxicabSuburban": "172, 303, 371, 427, 718, 723, 724, 726д, 729, 732, 736, 739, 756, 757, 791, 801, 812, 825, 904",
+    "Exit To":"Prospekt Akademika Glushkova, Vasyla Kasiana street",
+    "Notes"    : "Kiyv horse racetrack, equestrian park"
+  },
+  "Teremky" : {
+    "Station"  : "Teremky",
+    "Line": "M2 (Blue) - Obolonsko–Teremkivska",
+    "Bus":" - ",
+    "Trolleybus": "43",
+    "TaxicabUrban": " 212, 416 ",
+    "TaxicabSuburban": "172, 303, 371, 427, 723, 724, 726д, 736, 739, 756, 757, 777, 791, 801, 825",
+    "Exit To":"Prospekt Akademika Glushkova",
+    "Notes"    : " -"
+  },
+  "Akademmistechko" : {
+    "Station": "Akademmistechko",
+    "Line": "M1 (Red) - Sviatoshynsko–Brovarska",
+    "Bus":"30,56,97,97к ",
+    "Trolleybus": "39,93Н",
+    "TaxicabUrban": "194, 200к, 202, 208, 401, 408, 417, 437, 497к, 510, 576 ",
+    "TaxicabSuburban": "301, 304, 304д, 348, 357, 379, 381, 386, 388, 389, 392, 393, 420, 422, 423, 424, 717, 741, 742, 745, 777, 796, 903, 903к ",
+    "Exit To":"Academician Efremov Street, Academic Palladin Avenue, Akademyka Vernadsky Boulevard",
+    "Notes"    : " -"
+  },
+  "Zhytomyrska" : {
+    "Station"  : "Zhytomyrska",
+    "Line": "M1 (Red) - Sviatoshynsko–Brovarska",
+    "Bus":"23, 37",
+    "Trolleybus": "93Н,94Н",
+    "TaxicabUrban": "188, 189, 199, 230, 348, 357, 358, 369, 373, 375, 381к, 381с, 381, 385, 386, 387, 388, 389, 391, 417, 437, 501, 517, 561, 716, 717, 720, 721, 727, 746, 747, 748, 749, 750, 759, 760, 761, 762, 763, 764, 765, 767, 768, 769, 770, 771, 772, 773, 774, 775, 776, 779, 816, 820д, 824, 826",
+    "TaxicabSuburban": " - ",
+    "Exit To":"Peremohy avenue, Streets :Semashko/ Fedora Krychevskogo/ Feodoty Pushinoy",
+    "Notes"    : " -"
+  },
+  "Sviatoshyn" : {
+    "Station"  : "Sviatoshyn",
+    "Line": "M1 (Red) - Sviatoshynsko–Brovarska",
+    "Bus":"23, 37, 37а, 90, 97",
+    "Trolleybus": "7, 41, 93Н, 94Н",
+    "TaxicabUrban": "186, 187, 188, 189, 202, 203, 417, 437, 461, 510, 517, 581",
+    "TaxicabSuburban": "306, 369, 373, 376, 377, 386, 388, 400, 423, 424, 716, 720, 721, 727, 743, 747, 748, 749, 750, 759, 760, 761, 762, 765, 768, 769, 770, 773, 778, 800, 824",
+    "Exit To":"Peremohy avenue, Heroiv Bresta square ",
+    "Notes"    : "«Siatoshyn» railway station»"
+  },
+  "Nyvky" : {
+    "Station"  : "Nyvky",
+    "Line": "M1 (Red) - Sviatoshynsko–Brovarska",
+    "Bus":"14, 23, 32, 47, 90",
+    "Trolleybus": "5, 7, 26, 92Н, 93Н, 94Н ",
+    "TaxicabUrban": "182, 186, 187, 188, 189, 226, 228, 410, 437, 455, 465, 517, 518, 537, 540, 575, 581",
+    "TaxicabSuburban": "306, 376, 716, 719, 720, 727, 743, 747, 749, 750, 759, 760, 765, 768, 769, 774, 824",
+    "Exit To":"Peremohy avenue, Streets: Danyla Scherbakyvskogo / Olerksandrivska / Gapaganivskia  ",
+    "Notes"    : " -"
+  },
+  "Beresteiska" : {
+    "Station"  : "Beresteiska",
+    "Line": "M1 (Red) - Sviatoshynsko–Brovarska",
+    "Bus":"9",
+    "Trolleybus": "14, 15",
+    "TaxicabUrban": "5, 7, 92Н, 93Н, 94Н",
+    "TaxicabSuburban": "189, 199, 226, 228, 230, 417, 429, 442д, 465, 484, 517, 518, 556, 573, 575, 720, 820д",
+    "Exit To":"Streets: Degtyarivskia / Tabirna / Mykoly Vasylenka ",
+    "Notes"    : "Railway  stop - «Rubezhivsky»"
+  },
+  "Shuliavska" : {
+    "Station"  : "Shuliavska",
+    "Line": "M1 (Red) - Sviatoshynsko–Brovarska",
+    "Bus":"2",
+    "Trolleybus": "5, 7, 22, 27, 30, 42, 92Н, 93Н, 94Н",
+    "TaxicabUrban": "150, 155, 157д, 168, 185, 189, 199, 201, 223, 227, 228, 230, 232, 239, 242, 421, 427, 429, 442, 442д, 455, 463д, 465, 477, 482, 484, 508, 517, 518, 550, 551, 565, 575, 720, 820д",
+    "TaxicabSuburban": " - ",
+    "Exit To":"Peremohy avenue, Oleksandra Dovzhenka street",
+    "Notes"    : " -"
+  },
+  "Politekhnichnyi Instytut" : {
+    "Station"  : "Politekhnichnyi Instytut",
+    "Line": "M1 (Red) - Sviatoshynsko–Brovarska",
+    "Bus":"2, 31, 118 ",
+    "Trolleybus": "5, 7, 92Н, 93Н, 94Н ",
+    "TaxicabUrban": "179, 189, 228, 427, 429, 442, 442д, 465, 518, 575 ",
+    "TaxicabSuburban": "306, 720",
+    "Exit To":"Peremohy avenue.Streets:Politechicnha, Bogdana Gavrylishina",
+    "Notes"    : "Kyiv Light Tram station - «Politechicnha»  "
+  },
+  "Vokzalna" : {
+    "Station"  : "Vokzalna",
+    "Line": "M1 (Red) - Sviatoshynsko–Brovarska",
+    "Bus":"5, 7, 12, 24, 114, 137Н",
+    "Trolleybus": "1, 3, 15, 18",
+    "TaxicabUrban": "181, 198, 223, 322, 401, 464, 465, 500, 507, 539, 558 ",
+    "TaxicabSuburban": "368, 805, 825",
+    "Exit To":"Vokzalna Square ",
+    "Notes"    : "«Kyiv-Pasazhyrskyi» Railway Station /«Pivnichna» - railway  stop / Kyiv Light Tram station - «Starovokzalna»"
+  },
+  "Universytet" : {
+    "Station"  : "Universytet",
+    "Line": "M1 (Red) - Sviatoshynsko–Brovarska",
+    "Bus":"24, 114, 118",
+    "Trolleybus": "5, 7, 8, 17",
+    "TaxicabUrban": "189, 228, 231, 429, 433, 450, 575",
+    "TaxicabSuburban": " - ",
+    "Exit To":" - ",
+    "Notes"    : "Exit to Taras Shevchenko National University of Kyiv and A.V. Fomin Botanical Garden"
+  },
+  "Teatralna" : {
+    "Station"  : "Teatralna",
+    "Line": "M1 (Red) - Sviatoshynsko–Brovarska",
+    "Bus":"24, 114(weekends) ",
+    "Trolleybus": " - ",
+    "TaxicabUrban": " - ",
+    "TaxicabSuburban": " - ",
+    "Exit To":"Streets: Boghdana Khmelnytskogo, Puskinska",
+    "Notes"  : "Transfer to «Zoloti Vorota» station"
+  },
+  "Khreshchatyk" : {
+    "Station"  : "Khreshchatyk",
+    "Line": "M1 (Red) - Sviatoshynsko–Brovarska",
+    "Bus":"24, 114 (work days)",
+    "Trolleybus": " - ",
+    "TaxicabUrban": " - ",
+    "TaxicabSuburban": " - ",
+    "Exit To":"Streets:Khreshchatyk,Institutska,Olginska, Arhitektora Gorodetskogo / Alley of Heroiv Nebesnoy Sotni",
+    "Notes": "Transfer to «Maidan Nezaleshnosty» station, exit to city center"
+  },
+  "Arsenalna" : {
+    "Station"  : "Arsenalna",
+    "Line": "M1 (Red) - Sviatoshynsko–Brovarska",
+    "Bus":"24, 55, 62",
+    "Trolleybus": "38",
+    "TaxicabUrban": " 444, 470, 520",
+    "TaxicabSuburban": " - ",
+    "Exit To":"Arsanalna square, Streets:Ivana Mazepy, Moskovska, Mykhaila Grushevskogo",
+    "Notes"    : " -"
+  },
+  "Dnipro" : {
+    "Station"  : "Dnipro",
+    "Line": "M1 (Red) - Sviatoshynsko–Brovarska",
+    "Bus":"115",
+    "Trolleybus": " - ",
+    "TaxicabUrban": " - ",
+    "TaxicabSuburban": " - ",
+    "Exit To":"Naberezhne shose",
+    "Notes"    : "Exit on the  right doors.View on Dnipro river"
+  },
+  "Hidropark" : {
+    "Station"  : "Hidropark",
+    "Line": "M1 (Red) - Sviatoshynsko–Brovarska",
+    "Bus":" - ",
+    "Trolleybus": " - ",
+    "TaxicabUrban": " - ",
+    "TaxicabSuburban": " - ",
+    "Exit To":"Brovarsky prospekt",
+    "Notes"    : "Exit on the  right doors"
+  },
+  "Livoberezhna" : {
+    "Station"  : "Livoberezhna",
+    "Line": "M1 (Red) - Sviatoshynsko–Brovarska",
+    "Bus":" 42, 46, 48, 49, 70, 95, 108 ",
+    "Trolleybus": " - ",
+    "TaxicabUrban": "117, 178, 215, 215к, 216, 222, 235, 245, 246, 248, 249, 316, 324, 425, 460, 503, 535, 542, 562, 578, 579, 580, 599, 752",
+    "TaxicabSuburban": " - ",
+    "Exit To":"Brovarsky prospekt,Streets: Evgena Sverstiuka/Mytropolita Andriya Sheptiskogo ",
+    "Notes"    : "Railway  stop - «Livoberezhna»"
+  },
+  "Darnytsia" : {
+    "Station"  : "Darnytsia",
+    "Line": "M1 (Red) - Sviatoshynsko–Brovarska",
+    "Bus":"45 ",
+    "Trolleybus": "29, 50, 50к, 91Н",
+    "TaxicabUrban": "221, 225, 405, 445, 476, 504, 509, 544, 545, 579, 589, 600",
+    "TaxicabSuburban": " - ",
+    "Exit To":"Brovarsky prospekt,Streets: Polupudrenka/Budivelnikiv/Andriya Malyshka",
+    "Notes"    : " -"
+  },
+  "Chernihivska" : {
+    "Station"  : "Chernihivska",
+    "Line": "M1 (Red) - Sviatoshynsko–Brovarska",
+    "Bus":"6, 63, 118",
+    "Trolleybus": "22, 23, 28, 28д, 33, 35",
+    "TaxicabUrban": "213, 221, 233, 236, 414, 416, 418, 419, 423, 434, 441, 473, 516, 523, 526, 527, 528, 529, 553, 555, 590, 590д",
+    "TaxicabSuburban": " - ",
+    "Exit To":"Brovarsky prospekt, Novorosiyskiya square, Streets:Polupudrenka, Bratislavska, Gnata Hotkevicha",
+    "Notes"    : " -"
+  },
+  "Lisova" : {
+    "Station"  : "Lisova",
+    "Line": "M1 (Red) - Sviatoshynsko–Brovarska",
+    "Bus":"11, 33, 79, 81",
+    "Trolleybus": "8, 28, 29, 32, 35",
+    "TaxicabUrban": "191, 233, 240, 241, 242, 258, 325, 418, 498, 526, 527, 701, 702, 703, 704, 705, 709, 710, 711, 713, 722, 73, 731, 751, 780, 781, 782, 783, 784, 788, 803, 804, 819, 823",
+    "TaxicabSuburban": " - ",
+    "Exit To":"Brovarsky prospekt, Streets:Kioto, Kubanskoiy Ukrajini,Polupudrenka",
+    "Notes"    : " -"
+  },
+  "Syrets" : {
+    "Station": "Syrets",
+    "Line": "M3 (Green) - Syretsko–Pecherska",
+    "Bus":"47",
+    "Trolleybus": "16,23,35",
+    "TaxicabUrban": "166, 223, 410, 439",
+    "TaxicabSuburban": " - ",
+    "Exit To":"Streets:Shcuseva,Stecenka,Volodymyra Salskogo ",
+    "Notes"    : "Railway  stop - «Syrets»"
+  },
+  "Dorohozhychi" : {
+    "Station"  : "Dorohozhychi",
+    "Line": "M3 (Green) - Syretsko–Pecherska",
+    "Bus":"47",
+    "Trolleybus": "16, 19, 22, 27, 30, 35",
+    "TaxicabUrban": "150, 155, 166, 223, 227, 242, 410, 421, 432, 439, 463, 464, 500, 550, 558, 573, 598д ",
+    "TaxicabSuburban": " - ",
+    "Exit To":"Streets:Shcuseva, Oleny Teligi, Yuria Illienka",
+    "Notes"    : "-"
+  },
+  "Lukianivska" : {
+    "Station"  : "Lukianivska",
+    "Line": "M3 (Green) - Syretsko–Pecherska",
+    "Bus":"9,31",
+    "Trolleybus": "6, 16, 18, 19, 19д, 23, 28, 33",
+    "TaxicabUrban": "166, 179, 181, 417, 432, 439, 464, 496, 499, 500, 558, 566, 586, 598д",
+    "TaxicabSuburban": " - ",
+    "Exit To":"Lukianovska Square,Streets:Sichovih Strilciv, Yuria Illienka, Degtyarivskoi,Biloruskoi. ",
+    "Notes"    : " -"
+  },
+  "Zoloti Vorota" : {
+    "Station"  : "Zoloti Vorota",
+    "Line": "M3 (Green) - Syretsko–Pecherska",
+    "Bus":" - ",
+    "Trolleybus": " - ",
+    "TaxicabUrban": " - ",
+    "TaxicabSuburban": " - ",
+    "Exit To":"Zolotovoritskyy proyizd,Volodymerska",
+    "Notes"  : "Transfer to «Teatralna» station"
+  },
+  "Palats Sportu" : {
+    "Station"  : "Palats Sportu",
+    "Line": "M3 (Green) - Syretsko–Pecherska",
+    "Bus":"55, 69, 137Н",
+    "Trolleybus": "3, 9, 14, 15, 40",
+    "TaxicabUrban": "171, 411, 427 ",
+    "TaxicabSuburban": " - ",
+    "Exit To":"Sportyvna Square, Streets: Esplanadna,Rognidinska",
+    "Notes"  : "Transfer to «Plosha Lva Tolstogo» station"
+  },
+  "Klovska" : {
+    "Station"  : "Klovska",
+    "Line": "M3 (Green) - Syretsko–Pecherska",
+    "Bus":"55",
+    "Trolleybus": " - ",
+    "TaxicabUrban": " - ",
+    "TaxicabSuburban": " - ",
+    "Exit To":"Streets: Mechnikova,Leonida Pervomayskogo,Pecherskogo",
+    "Notes"    : " -"
+  },
+  "Pecherska" : {
+    "Station"  : "Pecherska",
+    "Line": "M3 (Green) - Syretsko–Pecherska",
+    "Bus":"62, 62к, 118, 137Н",
+    "Trolleybus": "14, 15, 38",
+    "TaxicabUrban": "470, 520",
+    "TaxicabSuburban": " - ",
+    "Exit To":"Streets: Bulʹvar Lesy Ukraynky, Lesy Ukraynky Square / Streets: Generala Almazova, Mykhaila Zadniprovskgo ",
+    "Notes"    : " -"
+  },
+  "Druzhby Narodiv" : {
+    "Station"  : "Druzhby Narodiv",
+    "Line": "M3 (Green) - Syretsko–Pecherska",
+    "Bus":"51, 62, 62к, 118",
+    "Trolleybus": "14, 15, 38, 43, 50, 91Н",
+    "TaxicabUrban": "205, 211, 416, 422, 444, 470, 491, 520, 523, 546, 590",
+    "TaxicabSuburban": "801, 812",
+    "Exit To":"Boulevard Druzhby Narodiv",
+    "Notes"    : " -"
+  },
+  "Vydubychi" : {
+    "Station"  : "Vydubychi",
+    "Line": "M3 (Green) - Syretsko–Pecherska",
+    "Bus":"43, 43к, 54 ",
+    "Trolleybus": "15, 38",
+    "TaxicabUrban": "193, 491, 520",
+    "TaxicabSuburban": "309, 310, 311, 315, 735, 738, 789, 811 ",
+    "Exit To":"Shose:Stolichne,Nadniprianske,Zaliznichne.Streets: Inzenerna,Promyslova,Budindustrii,Naberezhno-Pecherska road",
+    "Notes"    : "Railway  stop - «Vydubychi» / «Vydubychi Trypilsky»"
+  },
+  "Slavutych" : {
+    "Station"  : "Slavutych",
+    "Line": "M3 (Green) - Syretsko–Pecherska",
+    "Bus":"35, 64, 91, 137Н",
+    "Trolleybus": " - ",
+    "TaxicabUrban": "220, 452, 459",
+    "TaxicabSuburban": " - ",
+    "Exit To":"Zarichna street,prospect Mykoly Bazhana",
+    "Notes"    : " -"
+  },
+  "Osokorky" : {
+    "Station"  : "Osokorky",
+    "Line": "M3 (Green) - Syretsko–Pecherska",
+    "Bus":"35, 42, 87, 91, 137Н",
+    "Trolleybus": " - ",
+    "TaxicabUrban": "220, 459, 535, 542",
+    "TaxicabSuburban": " - ",
+    "Exit To":"Prospect Mykoly Bazhana,Dniprovska naberezna",
+    "Notes"    : " -"
+  },
+  "Pozniaky" : {
+    "Station"  : "Pozniaky",
+    "Line": "M3 (Green) - Syretsko–Pecherska",
+    "Bus":"45, 91, 137Н",
+    "Trolleybus": " - ",
+    "TaxicabUrban": "220, 250, 445, 475, 513, 526, 535, 545, 577",
+    "TaxicabSuburban": " - ",
+    "Exit To":"Prospect Mykoly Bazhana,Petra Grygorenka.Streets:Olexandra Myshugi,Mykhaila Gryshka ",
+    "Notes"    : " - "
+  },
+  "Kharkivska" : {
+    "Station"  : "Kharkivska",
+    "Line": "M3 (Green) - Syretsko–Pecherska",
+    "Bus":"17, 18, 45, 91, 104, 108, 137Н",
+    "Trolleybus": " - ",
+    "TaxicabUrban": "220, 225, 407, 415, 474, 487, 535, 545, 599",
+    "TaxicabSuburban": "317, 317а, 322, 324, 324П, 330к, 753, 787, 807, 808, 941",
+    "Exit To":"Prospect Mykoly Bazhana.Streets: Revuckogo,Deakbristiv",
+    "Notes"    : " -"
+  },
+  "Vyrlytsia" : {
+    "Station"  : "Vyrlytsia",
+    "Line": "M3 (Green) - Syretsko–Pecherska",
+    "Bus":" - ",
+    "Trolleybus": " - ",
+    "TaxicabUrban": "474, 535",
+    "TaxicabSuburban": "317, 317а, 324, 324П, 330к, 753, 787, 807, 808, 941 ",
+    "Exit To":"Prospect Mykoly Bazhana, Virmenstka street",
+    "Notes"    : " -"
+  },
+  "Boryspilska" : {
+    "Station"  : "Boryspilska",
+    "Line": "M3 (Green) - Syretsko–Pecherska",
+    "Bus":"104",
+    "Trolleybus": " - ",
+    "TaxicabUrban": "152, 177, 178, 474, 529, 535",
+    "TaxicabSuburban": "316, 317, 317а, 324, 324П, 330к, 753, 787, 807, 808, 941",
+    "Exit To":"Kharkivska Square, Kharkivske Shose, Streets:Yalinkova,Tashkentska ",
+    "Notes"    : " -"
+  },
+  "Chervony Khutir" : {
+    "Station"  : "Chervony Khutir",
+    "Line": "M3 (Green) - Syretsko–Pecherska",
+    "Bus":"51, 63",
+    "Trolleybus": " - ",
+    "TaxicabUrban": "503, 516",
+    "TaxicabSuburban": " - ",
+    "Exit To":"Streets:Staroboryspilska,Mykoly Chvilovogo",
+    "Notes"    : " -"
+  }
+}

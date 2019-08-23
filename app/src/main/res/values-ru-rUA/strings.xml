@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Kiyv Metro Guide</string>
+    <string name="red_line_name">Святошино-Броварська</string>
+    <string name="blue_line_name">Оболонсько-Теремківська</string>
+    <string name="green_line_name">Сирецько-Печерська</string>
+    <string name="Name">Станція:</string>
+    <string name="Transfer">Пересадка :</string>
+    <string name="TransferLine">На станції наявна пересадка</string>
+    <string name="search">Пошук</string>
+    <string name="MetroLineName">Лінія</string>
+    <string name="Transport">Транспорт :</string>
+    <string name="bus_routes">Автобус:</string>
+    <string name="trolley">Троллейбус:</string>
+    <string name="marshrutkas_gorod">Маршрутне таксі (міське):</string>
+    <string name="marshrutkas_prigorod">Маршрутне таксі (приміське):</string>
+    <string name="closest_street">Вихід до:</string>
+    <string name="railway">Залізнична станція/вокзал</string>
+    <string name="lightTram">Київський швидкісний трамвай</string>
+    <string name="richVokzal">Київський Річковий Порт</string>
+    <string name="autoVokzal">Автовокзал</string>
+    <string name="notes">Примітки :</string>
+
+    <string name="exit">Вихід</string>
+    <string name="Information">Інформація</string>
+    <string name="NightMode">Нічний режим</string>
+</resources>

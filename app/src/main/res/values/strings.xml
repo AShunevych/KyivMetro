@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Kiyv Metro Guide</string>
+    <string name="red_line_name">Sviatoshynsko–Brovarska</string>
+    <string name="blue_line_name">Obolonsko–Teremkivska </string>
+    <string name="green_line_name">Syretsko–Pecherska</string>
+    <string name="Name">STATION:</string>
+    <string name="Transfer">TRANSFER TO:</string>
+    <string name="TransferLine">Transfer line</string>
+    <string name="MetroLineName">Line</string>
+    <string name="search">Search</string>
+    <string name="bus_routes">BUS:</string>
+    <string name="trolley">TROLLEYBUS:</string>
+    <string name="Transport">TRANSPORT : </string>
+    <string name="marshrutkas_gorod">ROUTED URBAN TAXICAB :</string>
+    <string name="marshrutkas_prigorod">ROUTED SUBURBAN TAXICAB:</string>
+    <string name="closest_street">EXIT TO :</string>
+    <string name="railway">Railway station</string>
+    <string name="lightTram"> Kiyv Light Rail</string>
+    <string name="richVokzal">Kiyv River Port</string>
+    <string name="autoVokzal">Cental Bus Station</string>
+    <string name="notes">NOTES</string>
+
+    <string name="exit">Exit</string>
+    <string name="Information">Information</string>
+    <string name="NightMode">Night Mode</string>
+</resources>

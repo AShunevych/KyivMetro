@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLay"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/textView29"
+        style="@style/TextAppearance_Legend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:alpha="1"
+        android:drawableStart="@drawable/ic_train_svg"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="@string/railway" />
+
+    <TextView
+        android:id="@+id/textView31"
+        style="@style/TextAppearance_Legend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView29"
+        android:alpha="1"
+        android:drawableStart="@drawable/ic_light_tram_svg"
+        android:text="@string/lightTram" />
+
+    <TextView
+        android:id="@+id/textView33"
+        style="@style/TextAppearance_Legend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView31"
+        android:alpha="1"
+        android:drawableStart="@drawable/ic_bus_svg"
+        android:text="@string/autoVokzal" />
+
+    <TextView
+        android:id="@+id/textView35"
+        style="@style/TextAppearance_Legend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView33"
+        android:alpha="1"
+        android:drawableStart="@drawable/ic_ship_svg"
+        android:text="@string/richVokzal" />
+
+    <TextView
+        android:id="@+id/textView38"
+        style="@style/TextAppearance_Legend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView35"
+        android:drawableStart="@drawable/ic_tranfer_line"
+        android:text="@string/TransferLine" />
+</RelativeLayout>

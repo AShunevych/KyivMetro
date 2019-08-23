@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="red_Line">ЧЕРВОНА\nГІЛКА</string>
+    <string name="Akademmistechko">Академістечко</string>
+    <string name="Zhytomyrska">Житомирська</string>
+    <string name="Sviatoshyn">Святошин</string>
+    <string name="Nyvky">Нивки</string>
+    <string name="Beresteiska">Берестейська</string>
+    <string name="Shuliavska">Шулявка</string>
+    <string name="Politekhnichnyi_Instytut">Політехн.\nІнститут</string>
+    <string name="PolitechJSON">Політехнічний Інститут</string>
+    <string name="Vokzalna">Вокзальна</string>
+    <string name="Universytet">Університет</string>
+    <string name="Teatralna">Театральна</string>
+    <string name="Khreshchatyk">Крещатик</string>
+    <string name="Arsenalna">Арсенальна</string>
+    <string name="Dnipro">Дніпро</string>
+    <string name="Hidropark">Гідропарк</string>
+    <string name="Livoberezhna">Лівобережна</string>
+    <string name="Darnytsia">Дарниця</string>
+    <string name="Chernihivska">Чернігівська</string>
+    <string name="Lisova">Лісова</string>
+</resources>
