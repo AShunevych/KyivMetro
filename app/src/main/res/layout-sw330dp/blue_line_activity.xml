@@ -366,7 +366,7 @@
                 style="@style/TextAppearance_FragmentText"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:drawableEnd="@drawable/ic_train_svg"
+
                 android:text="@string/Pochaina"
                 app:layout_constraintBottom_toBottomOf="@+id/Pochaina"
                 app:layout_constraintEnd_toEndOf="@+id/textView4"
@@ -382,7 +382,6 @@
 
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="8dp"
-                android:drawableEnd="@drawable/ic_ship_svg"
                 android:text="@string/Poshtova"
                 app:layout_constraintBottom_toBottomOf="@+id/Poshtova"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -545,7 +544,7 @@
 
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="8dp"
-                android:drawableEnd="@drawable/ic_bus_svg"
+
                 android:text="@string/Kontraktova"
                 app:layout_constraintBottom_toBottomOf="@+id/Kontraktova"
                 app:layout_constraintEnd_toEndOf="parent"

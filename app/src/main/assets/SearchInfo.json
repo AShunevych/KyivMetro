@@ -1,0 +1,204 @@
+{
+  "Station": [
+    {
+      "Name": "Akademmistechko",
+      "Line": "M1 (Red) - Sviatoshynsko–Brovarska"
+    },
+    {
+      "Name": "Zhytomyrska",
+      "Line": "M1 (Red) - Sviatoshynsko–Brovarska"
+    },
+    {
+      "Name": "Sviatoshyn",
+      "Line": "M1 (Red) - Sviatoshynsko–Brovarska"
+    },
+    {
+      "Name": "Nyvky",
+      "Line": "M1 (Red) - Sviatoshynsko–Brovarska"
+    },
+    {
+      "Name": "Politekhnichnyi Instytut",
+      "Line": "M1 (Red) - Sviatoshynsko–Brovarska"
+    },
+    {
+      "Name": "Vokzalna",
+      "Line": "M1 (Red) - Sviatoshynsko–Brovarska"
+    },
+    {
+      "Name": "Universytet",
+      "Line": "M1 (Red) - Sviatoshynsko–Brovarska"
+    },
+    {
+      "Name": "Teatralna",
+      "Line": "M1 (Red) - Sviatoshynsko–Brovarska"
+    },
+    {
+      "Name": "Khreshchatyk",
+      "Line": "M1 (Red) - Sviatoshynsko–Brovarska"
+    },
+    {
+      "Name": "Arsenalna",
+      "Line": "M1 (Red) - Sviatoshynsko–Brovarska"
+    },
+    {
+      "Name": "Dnipro",
+      "Line": "M1 (Red) - Sviatoshynsko–Brovarska"
+    },
+    {
+      "Name": "Hidropark",
+      "Line": "M1 (Red) - Sviatoshynsko–Brovarska"
+    },
+    {
+      "Name": "Livoberezhna",
+      "Line": "M1 (Red) - Sviatoshynsko–Brovarska"
+    },
+    {
+      "Name": "Darnytsia",
+      "Line": "M1 (Red) - Sviatoshynsko–Brovarska"
+    },
+    {
+      "Name": "Chernihivska",
+      "Line": "M1 (Red) - Sviatoshynsko–Brovarska"
+    },
+    {
+      "Name": "Lisova",
+      "Line": "M1 (Red) - Sviatoshynsko–Brovarska"
+    },
+    {
+      "Name": "Heroiv Dnipra",
+      "Line": "M2 (Blue) - Obolonsko–Teremkivska"
+    },
+    {
+      "Name": "Minska",
+      "Line": "M2 (Blue) - Obolonsko–Teremkivska"
+    },
+    {
+      "Name": "Obolon",
+      "Line": "M2 (Blue) - Obolonsko–Teremkivska"
+    },
+    {
+      "Name": "Pochaina",
+      "Line": "M2 (Blue) - Obolonsko–Teremkivska"
+    },
+    {
+      "Name": "Tarasa Shevchenka",
+      "Line": "M2 (Blue) - Obolonsko–Teremkivska"
+    },
+    {
+      "Name": "Kontraktova Ploshcha",
+      "Line": "M2 (Blue) - Obolonsko–Teremkivska"
+    },
+    {
+      "Name": "Poshtova Ploshcha",
+      "Line": "M2 (Blue) - Obolonsko–Teremkivska"
+    },
+    {
+      "Name": "Maidan Nezalezhnosti",
+      "Line": "M2 (Blue) - Obolonsko–Teremkivska"
+    },
+    {
+      "Name": "Ploshcha Lva Tolstoho",
+      "Line": "M2 (Blue) - Obolonsko–Teremkivska"
+    },
+    {
+      "Name": "Olimpiiska",
+      "Line": "M2 (Blue) - Obolonsko–Teremkivska"
+    },
+    {
+      "Name": "Palats Ukrayina",
+      "Line": "M2 (Blue) - Obolonsko–Teremkivska"
+    },
+    {
+      "Name": "Lybidska",
+      "Line": "M2 (Blue) - Obolonsko–Teremkivska"
+    },
+    {
+      "Name": "Demiivska",
+      "Line": "M2 (Blue) - Obolonsko–Teremkivska"
+    },
+    {
+      "Name": "Holosiivska",
+      "Line": "M2 (Blue) - Obolonsko–Teremkivska"
+    },
+    {
+      "Name": "Vasylkivska",
+      "Line": "M2 (Blue) - Obolonsko–Teremkivska"
+    },
+    {
+      "Name": "Vystavkovyi centr",
+      "Line": "M2 (Blue) - Obolonsko–Teremkivska"
+    },
+    {
+      "Name": "Ipodrom",
+      "Line": "M2 (Blue) - Obolonsko–Teremkivska"
+    },
+    {
+      "Name": "Teremky",
+      "Line": "M2 (Blue) - Obolonsko–Teremkivska"
+    },
+    {
+      "Name": "Syrets",
+      "Line": "M3 (Green) - Syretsko–Pecherska"
+    },
+    {
+      "Name": "Dorohozhychi",
+      "Line": "M3 (Green) - Syretsko–Pecherska"
+    },
+    {
+      "Name": "Lukianivska",
+      "Line": "M3 (Green) - Syretsko–Pecherska"
+    },
+    {
+      "Name": "Zoloti Vorota",
+      "Line": "M3 (Green) - Syretsko–Pecherska"
+    },
+    {
+      "Name": "Palats Sportu",
+      "Line": "M3 (Green) - Syretsko–Pecherska"
+    },
+    {
+      "Name": "Klovska",
+      "Line": "M3 (Green) - Syretsko–Pecherska"
+    },
+    {
+      "Name": "Pecherska",
+      "Line": "M3 (Green) - Syretsko–Pecherska"
+    },
+    {
+      "Name": "Druzhby Narodiv",
+      "Line": "M3 (Green) - Syretsko–Pecherska"
+    },
+    {
+      "Name": "Vydubychi",
+      "Line": "M3 (Green) - Syretsko–Pecherska"
+    },
+    {
+      "Name": "Slavutych",
+      "Line": "M3 (Green) - Syretsko–Pecherska"
+    },
+    {
+      "Name": "Osokorky",
+      "Line": "M3 (Green) - Syretsko–Pecherska"
+    },
+    {
+      "Name": "Pozniaky",
+      "Line": "M3 (Green) - Syretsko–Pecherska"
+    },
+    {
+      "Name": "Kharkivska",
+      "Line": "M3 (Green) - Syretsko–Pecherska"
+    },
+    {
+      "Name": "Vyrlytsia",
+      "Line": "M3 (Green) - Syretsko–Pecherska"
+    },
+    {
+      "Name": "Boryspilska",
+      "Line": "M3 (Green) - Syretsko–Pecherska"
+    },
+    {
+      "Name": "Chervony Khutir",
+      "Line": "M3 (Green) - Syretsko–Pecherska"
+    }
+  ]
+}

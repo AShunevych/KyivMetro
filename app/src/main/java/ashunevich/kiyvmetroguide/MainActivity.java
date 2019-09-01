@@ -1,5 +1,6 @@
 package ashunevich.kiyvmetroguide;
 
+import android.content.Intent;
 import android.graphics.Paint;
 import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
@@ -52,9 +53,6 @@ public class MainActivity extends AppCompatActivity {
         setTabListener();
 
 
-        // TODO (1) DESIGN FIX
-        //TODO (2) Apply theme changer
-        // TODO (3) Apply Search Engine
 
     }
 
@@ -98,11 +96,12 @@ public class MainActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item) {
 
         switch (item.getItemId()) {
-            case R.id.infromationitem:
-                showEditDialog();
-                return true;
             case R.id.nightMode:
                 switchNightMode();
+                return true;
+            case R.id.switchToSearch:
+                Intent intent = new Intent(MainActivity.this,JSONSearchActivity.class);
+                startActivity(intent);
                 return true;
             case R.id.Exit:
                 finish();
@@ -114,12 +113,6 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-    private void showEditDialog() {
-        FragmentManager fm = getSupportFragmentManager();
-        CustomDialog editNameDialogFragment = CustomDialog.newInstance(getResources().getString(R.string.Information));
-
-        editNameDialogFragment.show(fm, "fragment_edit_name");
-    }
 
     class ViewPagerAdapter extends FragmentPagerAdapter {
         private final List<Fragment> mFragmentList = new ArrayList<>();
@@ -152,7 +145,7 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    private void switchNightMode(){
+    protected void switchNightMode(){
         if(!mIsNightMode){
             getDelegate().setLocalNightMode(AppCompatDelegate.MODE_NIGHT_YES);
             mIsNightMode = true;

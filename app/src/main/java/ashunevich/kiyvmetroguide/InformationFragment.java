@@ -16,6 +16,7 @@ import butterknife.ButterKnife;
 
 public class InformationFragment extends Fragment {
 
+
     @BindView(R.id.stationName)
     TextView station;
     @BindView(R.id.notesText)
@@ -34,6 +35,7 @@ public class InformationFragment extends Fragment {
     public InformationFragment() {
         // Required empty public constructor
     }
+
 
     @Override
     public void onStart(){
