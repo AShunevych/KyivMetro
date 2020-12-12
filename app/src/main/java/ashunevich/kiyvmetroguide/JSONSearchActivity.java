@@ -3,11 +3,10 @@ package ashunevich.kiyvmetroguide;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.util.Log;
-import android.widget.EditText;
+import android.view.View;
 
 import com.google.gson.Gson;
 
@@ -21,32 +20,30 @@ import java.util.ArrayList;
 import java.util.Locale;
 
 
-import butterknife.BindView;
-import butterknife.ButterKnife;
+import ashunevich.kiyvmetroguide.databinding.SearchActivityBinding;
 
 public class JSONSearchActivity extends AppCompatActivity {
     String TAG = JSONSearchActivity.class.getSimpleName();
     private String LOCALE;
-    private ArrayList<JSONSearchItem> listContentArr = new ArrayList<>();
+    private final ArrayList<JSONSearchItem> listContentArr = new ArrayList<>();
     JSONSearchItem item = new JSONSearchItem();
     JSONSearchItemAdapter adapter;
-
-    @BindView(R.id.jsonRecycler) RecyclerView recyclerView;
-    @BindView(R.id.filterTextView) EditText editText;
+    private SearchActivityBinding binding;
 
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.search_activity);
+        binding = SearchActivityBinding.inflate(getLayoutInflater());
+        View view = binding.getRoot();
+        setContentView(view);
         LOCALE = Locale.getDefault().getDisplayLanguage();
-        ButterKnife.bind(this);
-        recyclerView.setLayoutManager(new LinearLayoutManager(this));
+        binding.jsonRecycler.setLayoutManager(new LinearLayoutManager(this));
         adapter = new JSONSearchItemAdapter(listContentArr);
-        recyclerView.setHasFixedSize(true);
+        binding.jsonRecycler.setHasFixedSize(true);
         buildRecyclerWithJson();
-        editText.addTextChangedListener(watcher);
+        binding.filterTextView.addTextChangedListener(watcher);
     }
 
 
@@ -100,7 +97,7 @@ public class JSONSearchActivity extends AppCompatActivity {
                 listContentArr.add(item);
                 adapter.notifyDataSetChanged();
                 adapter.setListContent(listContentArr);
-                recyclerView.setAdapter(adapter);
+                binding.jsonRecycler.setAdapter(adapter);
             }
     } catch (Exception ex) {
         Log.e(TAG, ex.getMessage());

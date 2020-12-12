@@ -1,6 +1,7 @@
 package ashunevich.kiyvmetroguide;
 
 import android.os.Bundle;
+import android.support.annotation.NonNull;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -9,18 +10,16 @@ import android.view.ViewGroup;
 import org.greenrobot.eventbus.EventBus;
 import org.json.JSONObject;
 
-import java.io.IOException;
-import java.io.InputStream;
-import java.nio.charset.StandardCharsets;
 import java.util.Locale;
+import java.util.Objects;
 
-import butterknife.ButterKnife;
-import butterknife.OnClick;
+import ashunevich.kiyvmetroguide.databinding.GreenLineActivityBinding;
 
 public class GreenLineFragment extends Fragment {
 
     String LOCALE;
     EventBus bus;
+    private GreenLineActivityBinding binding;
 
     public GreenLineFragment() {
         // Required empty public constructor
@@ -32,38 +31,40 @@ public class GreenLineFragment extends Fragment {
     }
 
     @Override
-    public View onCreateView( LayoutInflater inflater, ViewGroup container,
-                              Bundle savedInstanceState) {
+    public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container,
+                             Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View view = inflater.inflate(R.layout.green_line_activity, container, false);
+       binding = GreenLineActivityBinding.inflate(inflater, container, false);
+        View view = binding.getRoot();
         LOCALE = Locale.getDefault().getDisplayLanguage();
         //   Log.d("Locale is", LOCALE);
-        ButterKnife.bind(this, view);
+        setGreenLineButtonsBindings();
         return view;
     }
 
-    @OnClick({R.id.Syrets,R.id.doroh,R.id.lukyanivska,R.id.vorota,R.id.palats,
-            R.id.klovska,R.id.pecherska,R.id.druzby,R.id.vydubychi,R.id.slavutych,R.id.osokorky,R.id.pozniaky,
-            R.id.kharkiv,R.id.vyrlytsia,R.id.boryspil,R.id.redhutir})
-    protected void setViewOnClickEvent(View view) {
-        switch (view.getId()) {
-            case R.id.Syrets:mSetAndSendText(getResources().getString(R.string.Syrets));break;
-            case R.id.doroh:mSetAndSendText(getResources().getString(R.string.Dorohozhychi));break;
-            case R.id.lukyanivska:mSetAndSendText(getResources().getString(R.string.Lukianivska));break;
-            case R.id.vorota:mSetAndSendText(getResources().getString(R.string.Vorota));break;
-            case R.id.palats:mSetAndSendText(getResources().getString(R.string.PalatsSportu));break;
-            case R.id.klovska:mSetAndSendText(getResources().getString(R.string.Klovska));break;
-            case R.id.pecherska:mSetAndSendText(getResources().getString(R.string.Pecherska));break;
-            case R.id.druzby:mSetAndSendText(getResources().getString(R.string.DruzhbyJSON));break;
-            case R.id.vydubychi:mSetAndSendText(getResources().getString(R.string.Vydubychi));break;
-            case R.id.slavutych:mSetAndSendText(getResources().getString(R.string.Slavutych));break;
-            case R.id.osokorky:mSetAndSendText(getResources().getString(R.string.Osokorky));break;
-            case R.id.pozniaky:mSetAndSendText(getResources().getString(R.string.Pozniaky));break;
-            case R.id.kharkiv:mSetAndSendText(getResources().getString(R.string.Kharkivska));break;
-            case R.id.vyrlytsia:mSetAndSendText(getResources().getString(R.string.Vyrlytsia));break;
-            case R.id.boryspil:mSetAndSendText(getResources().getString(R.string.Boryspilska));break;
-            case R.id.redhutir:mSetAndSendText(getResources().getString(R.string.KhutirJSON));break;
-        }
+    @Override
+    public void onDestroyView() {
+        binding = null;
+        super.onDestroyView();
+    }
+
+    private void setGreenLineButtonsBindings(){
+        binding.Syrets.setOnClickListener (v ->mSetAndSendText(getResources().getString(R.string.Syrets)));
+        binding.doroh.setOnClickListener (v ->mSetAndSendText(getResources().getString(R.string.Dorohozhychi)));
+        binding.lukyanivska.setOnClickListener (v ->mSetAndSendText(getResources().getString(R.string.Lukianivska)));
+        binding.vorota.setOnClickListener (v ->mSetAndSendText(getResources().getString(R.string.Vorota)));
+        binding.palats.setOnClickListener (v ->mSetAndSendText(getResources().getString(R.string.PalatsSportu)));
+        binding.klovska.setOnClickListener (v ->mSetAndSendText(getResources().getString(R.string.Klovska)));
+        binding.pecherska.setOnClickListener (v ->mSetAndSendText(getResources().getString(R.string.Pecherska)));
+        binding.druzby.setOnClickListener (v ->mSetAndSendText(getResources().getString(R.string.DruzhbyJSON)));
+        binding.vydubychi.setOnClickListener (v ->mSetAndSendText(getResources().getString(R.string.Vydubychi)));
+        binding.slavutych.setOnClickListener (v ->mSetAndSendText(getResources().getString(R.string.Slavutych)));
+        binding.osokorky.setOnClickListener (v ->mSetAndSendText(getResources().getString(R.string.Osokorky)));
+        binding.pozniaky.setOnClickListener (v ->mSetAndSendText(getResources().getString(R.string.Pozniaky)));
+        binding.kharkiv.setOnClickListener (v ->mSetAndSendText(getResources().getString(R.string.Kharkivska)));
+        binding.vyrlytsia.setOnClickListener (v ->mSetAndSendText(getResources().getString(R.string.Vyrlytsia)));
+        binding.boryspil.setOnClickListener (v ->mSetAndSendText(getResources().getString(R.string.Boryspilska)));
+        binding.redhutir.setOnClickListener (v ->mSetAndSendText(getResources().getString(R.string.KhutirJSON)));
     }
 
     private void mSetAndSendText(String stationName) {
@@ -76,10 +77,13 @@ public class GreenLineFragment extends Fragment {
     }
 
 
+
+
     public void jsonObjToText(String createdJsonName, String stationName) {
         bus = EventBus.getDefault();
         try {
-            JSONObject emp = (new JSONObject(loadJsonEvent(createdJsonName))).getJSONObject(stationName);
+            JSONObject emp = (new JSONObject(LineFragmentUtils.loadJsonEvent(createdJsonName,
+                    Objects.requireNonNull(getContext())))).getJSONObject(stationName);
             String mStation = emp.getString("Station");
             String mBusRoutes = emp.getString("Bus");
             String mTrolleyRoutes = emp.getString("Trolleybus");
@@ -95,21 +99,5 @@ public class GreenLineFragment extends Fragment {
             e.printStackTrace();
         }
     }
-
-    public String loadJsonEvent(String jsonName) {
-        String json = null;
-        try {
-            InputStream inputStream = getActivity().getAssets().open(jsonName);
-            int size = inputStream.available();
-            byte[] buffer = new byte[size];
-            inputStream.read(buffer);
-            inputStream.close();
-            json = new String(buffer, StandardCharsets.UTF_8);
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-        return json;
-    }
-
 
 }

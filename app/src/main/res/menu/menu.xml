@@ -3,18 +3,8 @@
     xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
-        android:id="@+id/nightMode"
-        android:icon="@drawable/ic_brightness_4_black_24dp"
-        android:title="Item"
-        app:showAsAction="always" />
-    <item
         android:id="@+id/switchToSearch"
         android:icon="@drawable/ic_search_black_24dp"
         android:title="@string/search"
         app:showAsAction="always" />
-    <item
-        android:id="@+id/Exit"
-        android:icon="@drawable/ic_exit_to_app_black_24dp"
-        android:title="@string/exit"
-        app:showAsAction="never" />
 </menu>

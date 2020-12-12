@@ -1,6 +1,7 @@
 package ashunevich.kiyvmetroguide;
 
 import android.os.Bundle;
+import android.support.annotation.NonNull;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -14,12 +15,13 @@ import java.io.InputStream;
 import java.nio.charset.StandardCharsets;
 import java.util.Locale;
 
-import butterknife.ButterKnife;
-import butterknife.OnClick;
+import ashunevich.kiyvmetroguide.databinding.RedLineActivityBinding;
+
 
 
 public class RedLineFragment extends Fragment {
 
+    private RedLineActivityBinding binding;
     String LOCALE;
     EventBus bus;
 
@@ -34,40 +36,43 @@ public class RedLineFragment extends Fragment {
     }
 
     @Override
-    public View onCreateView( LayoutInflater inflater, ViewGroup container,
+    public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View view = inflater.inflate(R.layout.red_line_activity, container, false);
+
+        binding = RedLineActivityBinding.inflate(inflater, container, false);
+        View view = binding.getRoot();
         LOCALE = Locale.getDefault().getDisplayLanguage();
+        setRedLineButtonsBindings();
      //   Log.d("Locale is", LOCALE);
-        ButterKnife.bind(this, view);
         return view;
     }
 
-    @OnClick({R.id.akadem,R.id.zhyto,R.id.sviatoshyn,R.id.nyvky,R.id.berest,
-          R.id.shuliavka,R.id.politech,R.id.vokzal,R.id.univer,R.id.teatr,R.id.krest,R.id.arsenal,
-            R.id.dnipro,R.id.park,R.id.livoberezhna,R.id.darnytsia,R.id.chernihiv,R.id.lisova})
-    protected void setViewOnClickEvent(View view) {
-        switch (view.getId()) {
-            case R.id.akadem:mSetAndSendText(getResources().getString(R.string.Akademmistechko));break;
-            case R.id.zhyto:mSetAndSendText(getResources().getString(R.string.Zhytomyrska));break;
-            case R.id.sviatoshyn:mSetAndSendText(getResources().getString(R.string.Sviatoshyn));break;
-            case R.id.nyvky:mSetAndSendText(getResources().getString(R.string.Nyvky));break;
-            case R.id.berest:mSetAndSendText(getResources().getString(R.string.Beresteiska));break;
-            case R.id.shuliavka:mSetAndSendText(getResources().getString(R.string.Shuliavska));break;
-            case R.id.politech:mSetAndSendText(getResources().getString(R.string.PolitechJSON));break;
-            case R.id.vokzal:mSetAndSendText(getResources().getString(R.string.Vokzalna));break;
-            case R.id.univer:mSetAndSendText(getResources().getString(R.string.Universytet));break;
-            case R.id.teatr:mSetAndSendText(getResources().getString(R.string.Teatralna));break;
-            case R.id.krest:mSetAndSendText(getResources().getString(R.string.Khreshchatyk));break;
-            case R.id.arsenal:mSetAndSendText(getResources().getString(R.string.Arsenalna));break;
-            case R.id.dnipro:mSetAndSendText(getResources().getString(R.string.Dnipro));break;
-            case R.id.park:mSetAndSendText(getResources().getString(R.string.Hidropark));break;
-            case R.id.livoberezhna:mSetAndSendText(getResources().getString(R.string.Livoberezhna));break;
-            case R.id.darnytsia:mSetAndSendText(getResources().getString(R.string.Darnytsia));break;
-            case R.id.chernihiv:mSetAndSendText(getResources().getString(R.string.Chernihivska));break;
-            case R.id.lisova:mSetAndSendText(getResources().getString(R.string.Lisova));break;
-        }
+    @Override
+    public void onDestroyView() {
+        binding = null;
+        super.onDestroyView();
+    }
+
+    private void setRedLineButtonsBindings(){
+        binding.akadem.setOnClickListener (v ->mSetAndSendText(getResources().getString(R.string.Akademmistechko)));
+        binding.zhyto.setOnClickListener (v ->mSetAndSendText(getResources().getString(R.string.Zhytomyrska)));
+        binding.sviatoshyn.setOnClickListener (v ->mSetAndSendText(getResources().getString(R.string.Sviatoshyn)));
+        binding.nyvky.setOnClickListener (v ->mSetAndSendText(getResources().getString(R.string.Nyvky)));
+        binding.berest.setOnClickListener (v ->mSetAndSendText(getResources().getString(R.string.Beresteiska)));
+        binding.shuliavka.setOnClickListener (v ->mSetAndSendText(getResources().getString(R.string.Shuliavska)));
+        binding.politech.setOnClickListener (v ->mSetAndSendText(getResources().getString(R.string.PolitechJSON)));
+        binding.vokzal.setOnClickListener (v ->mSetAndSendText(getResources().getString(R.string.Vokzalna)));
+        binding.univer.setOnClickListener (v ->mSetAndSendText(getResources().getString(R.string.Universytet)));
+        binding.teatr.setOnClickListener (v ->mSetAndSendText(getResources().getString(R.string.Teatralna)));
+        binding.krest.setOnClickListener (v ->mSetAndSendText(getResources().getString(R.string.Khreshchatyk)));
+        binding.arsenal.setOnClickListener (v ->mSetAndSendText(getResources().getString(R.string.Arsenalna)));
+        binding.dnipro.setOnClickListener (v ->mSetAndSendText(getResources().getString(R.string.Dnipro)));
+        binding.park.setOnClickListener (v ->mSetAndSendText(getResources().getString(R.string.Hidropark)));
+        binding.livoberezhna.setOnClickListener (v ->mSetAndSendText(getResources().getString(R.string.Livoberezhna)));
+        binding.darnytsia.setOnClickListener (v ->mSetAndSendText(getResources().getString(R.string.Darnytsia)));
+        binding.chernihiv.setOnClickListener (v ->mSetAndSendText(getResources().getString(R.string.Chernihivska)));
+        binding.lisova.setOnClickListener (v ->mSetAndSendText(getResources().getString(R.string.Lisova)));
     }
 
     private void mSetAndSendText(String stationName) {

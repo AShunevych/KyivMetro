@@ -3,13 +3,8 @@ package ashunevich.kiyvmetroguide;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.support.v7.app.AppCompatDelegate;
 import android.view.View;
-import android.widget.Button;
-import android.widget.ImageButton;
-import android.widget.TextView;
 
-import org.greenrobot.eventbus.EventBus;
 import org.json.JSONObject;
 
 import java.io.IOException;
@@ -17,50 +12,24 @@ import java.io.InputStream;
 import java.nio.charset.StandardCharsets;
 import java.util.Locale;
 
-import butterknife.BindView;
-import butterknife.ButterKnife;
+import ashunevich.kiyvmetroguide.databinding.InformationResultLayoutBinding;
 
 public class SearchResultActivity extends AppCompatActivity {
 
      String LOCALE;
-    public static boolean mIsNightMode = false;
-
-    @BindView(R.id.info_Station)
-    TextView station;
-    @BindView(R.id.info_Line)
-    TextView line;
-    @BindView(R.id.bus_Info)
-    TextView bus;
-    @BindView(R.id.trolley_info)
-    TextView trolley;
-    @BindView(R.id.info_UTaxiCub)
-    TextView uTaxiCub;
-    @BindView(R.id.info_SuTaxiCub)
-    TextView suTaxiCub;
-    @BindView(R.id.info_Streets)
-    TextView streets;
-    @BindView(R.id.info_Notes)
-    TextView notes;
-    @BindView(R.id.finishThisAct)
-    ImageButton backToSearch;
-
+    private InformationResultLayoutBinding bindingl;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.information_result_layout);
-        ButterKnife.bind(this);
+        bindingl = InformationResultLayoutBinding.inflate(getLayoutInflater());
+        View view = bindingl.getRoot();
+        setContentView(view);
         Intent intent = getIntent();
          String value = intent.getStringExtra("StationName");
         LOCALE = Locale.getDefault().getDisplayLanguage();
         setJsonOnCreate(value);
 
-        backToSearch.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                    finish();
-            }
-        });
     }
 
     private void setJsonOnCreate(String stationName) {
@@ -77,14 +46,14 @@ public class SearchResultActivity extends AppCompatActivity {
     public void jsonToTextView(String loadedJson, String loadedIntentVAlue) throws NullPointerException {
         try {
             JSONObject emp = (new JSONObject(loadJsonEvent(loadedJson))).getJSONObject(loadedIntentVAlue);
-            station.setText(emp.getString("Station"));
-            line.setText(emp.getString("Line"));
-            bus.setText(emp.getString("Bus"));
-            trolley.setText(emp.getString("Trolleybus"));
-            uTaxiCub.setText(emp.getString("TaxicabUrban"));
-            suTaxiCub.setText(emp.getString("TaxicabSuburban"));
-            streets.setText(emp.getString("Exit To"));
-            notes.setText(emp.getString("Notes"));
+            bindingl.infoStation.setText(emp.getString("Station"));
+            bindingl.infoLine.setText(emp.getString("Line"));
+            bindingl.busInfo.setText(emp.getString("Bus"));
+            bindingl.trolleyInfo.setText(emp.getString("Trolleybus"));
+            bindingl.infoUTaxiCub.setText(emp.getString("TaxicabUrban"));
+            bindingl.infoSuTaxiCub.setText(emp.getString("TaxicabSuburban"));
+            bindingl.infoStreets.setText(emp.getString("Exit To"));
+            bindingl.infoNotes.setText(emp.getString("Notes"));
         } catch (Exception e) {
             e.printStackTrace();
         }

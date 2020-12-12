@@ -26,28 +26,6 @@
             >
 
 
-            <Button
-                android:id="@+id/button5"
-                android:layout_width="21dp"
-                android:layout_height="28dp"
-                android:layout_marginEnd="8dp"
-                android:background="@drawable/ic_red_to_green"
-                app:layout_constraintBottom_toBottomOf="@+id/textView10"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="@+id/textView10"
-                app:layout_constraintVertical_bias="0.49" />
-
-            <Button
-                android:id="@+id/button6"
-                android:layout_width="21dp"
-                android:layout_height="28dp"
-                android:layout_marginEnd="8dp"
-                android:background="@drawable/ic_red_to_blue"
-                app:layout_constraintBottom_toBottomOf="@+id/krest"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="@+id/krest"
-                app:layout_constraintVertical_bias="0.49" />
-
             <TextView
                 android:id="@+id/textView37"
                 style="@style/TextAppearance_FragmentText"
@@ -483,7 +461,7 @@
                 android:gravity="start"
                 android:text="@string/Teatralna"
                 app:layout_constraintBottom_toBottomOf="@+id/teatr"
-                app:layout_constraintEnd_toStartOf="@+id/button5"
+                app:layout_constraintEnd_toEndOf="@+id/textView9"
                 app:layout_constraintStart_toStartOf="@+id/textView9" />
 
             <TextView
@@ -495,7 +473,7 @@
                 android:text="@string/Khreshchatyk"
                 android:textSize="11sp"
                 app:layout_constraintBottom_toBottomOf="@+id/krest"
-                app:layout_constraintEnd_toStartOf="@+id/button6"
+                app:layout_constraintEnd_toEndOf="@+id/textView10"
                 app:layout_constraintStart_toStartOf="@+id/textView10"
                 app:layout_constraintTop_toTopOf="@+id/krest" />
 
