@@ -2,10 +2,12 @@
 <resources>
     <color name="colorPrimary">#3e517a</color>
     <color name="colorPrimaryDark">#303F9F</color>
-    <color name="colorAccent">#fe5f55</color>
+    <color name="colorAccent">#d50000</color>
     <color name="ColorAlternative">#fff</color>
     <color name="TextColor">#000</color>
 
+
+    <color name="rippleColor">#80000000</color>
     <color name="transparent_black">#80000000</color>
     <color name="buttonColor">#3e2f5b</color>
     <color name="GreenLineColor">#228B22</color>

@@ -3,6 +3,7 @@ package ashunevich.kiyvmetroguide;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.View;
 
 import org.json.JSONObject;
@@ -26,18 +27,18 @@ public class SearchResultActivity extends AppCompatActivity {
         View view = bindingl.getRoot();
         setContentView(view);
         Intent intent = getIntent();
-         String value = intent.getStringExtra("StationName");
+        String value = intent.getStringExtra("StationName");
         LOCALE = Locale.getDefault().getDisplayLanguage();
-        setJsonOnCreate(value);
+        Log.d("LOCALE",LOCALE);
+        setResult(value);
 
     }
 
-    private void setJsonOnCreate(String stationName) {
-        if(LOCALE.equals("русский")){
-
+    private void setResult(String stationName) {
+        if(LOCALE.toLowerCase().contains(("uk"))){
             jsonToTextView("StationInfo_Ukr.json",stationName);
         }
-        else{
+      else{
             jsonToTextView("StationInfo.json",stationName);
         }
     }

@@ -4,7 +4,7 @@
     <string name="red_line_name">Святошино-Броварська</string>
     <string name="blue_line_name">Оболонсько-Теремківська</string>
     <string name="green_line_name">Сирецько-Печерська</string>
-    <string name="Name">Станція:</string>
+    <string name="Name">Назва:</string>
     <string name="Transfer">Пересадка :</string>
     <string name="TransferLine">На станції наявна пересадка</string>
     <string name="search">Пошук</string>
@@ -20,8 +20,8 @@
     <string name="richVokzal">Київський Річковий Порт</string>
     <string name="autoVokzal">Автовокзал</string>
     <string name="notes">Примітки :</string>
+    <string name="searchRes">Інформація про станцію</string>
 
     <string name="exit">Вихід</string>
-    <string name="Information">Інформація</string>
-    <string name="NightMode">Нічний режим</string>
+
 </resources>

@@ -8,10 +8,9 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import org.greenrobot.eventbus.EventBus;
-import org.json.JSONObject;
 
 import java.util.Locale;
-import java.util.Objects;
+
 
 import ashunevich.kiyvmetroguide.databinding.BlueLineActivityBinding;
 
@@ -69,31 +68,11 @@ public class BlueLineFragment extends Fragment {
     }
 
     private void mSetAndSendText(String stationName) {
-        if(LOCALE.equals("русский") | LOCALE.equals("українська") ){
-            jsonObjToText("StationInfo_Ukr.json",stationName );
+        if(LOCALE.toLowerCase().contains(("uk"))){
+            LineFragmentUtils.jsonObjToText(bus,"StationInfo_Ukr.json",stationName,requireContext());
         }
         else{
-            jsonObjToText("StationInfo_.json",stationName);
-        }
-    }
-
-    public void jsonObjToText(String createdJsonName, String stationName) {
-        bus = EventBus.getDefault();
-        try {
-            JSONObject emp = (new JSONObject(LineFragmentUtils.loadJsonEvent(createdJsonName, Objects.requireNonNull(getContext())))).getJSONObject(stationName);
-            String mStation = emp.getString("Station");
-            String mBusRoutes = emp.getString("Bus");
-            String mTrolleyRoutes = emp.getString("Trolleybus");
-            String mTaxicabRoutesU = emp.getString("TaxicabUrban");
-            String mTaxicabRoutesSU = emp.getString("TaxicabSuburban");
-            String mStreets = emp.getString("Exit To");
-            String mNotes = emp.getString("Notes");
-            bus.post(new SendTextEvent(mStation,
-                    mBusRoutes,mTrolleyRoutes,
-                    mTaxicabRoutesU,mTaxicabRoutesSU
-                    ,mStreets,mNotes));
-        } catch (Exception e) {
-            e.printStackTrace();
+            LineFragmentUtils.jsonObjToText(bus,"StationInfo.json",stationName,requireContext());
         }
     }
 }

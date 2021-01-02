@@ -26,6 +26,7 @@ public class MainActivity extends AppCompatActivity {
 
     EventBus bus;
 
+    @SuppressWarnings("ConstantConditions")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -33,11 +34,14 @@ public class MainActivity extends AppCompatActivity {
         View view = binding.getRoot();
         setContentView(view);
         ViewPagerAdapter   adapter = new ViewPagerAdapter(getSupportFragmentManager());
-        adapter.addFragment(new RedLineFragment(),getResources().getString(R.string.red_Line));
-        adapter.addFragment(new BlueLineFragment(),getResources().getString(R.string.blue_line));
-        adapter.addFragment(new GreenLineFragment(),getResources().getString(R.string.green_line));
+        adapter.addFragment(new RedLineFragment(),null);
+        adapter.addFragment(new BlueLineFragment(),null);
+        adapter.addFragment(new GreenLineFragment(),null);
         binding.viewPager.setAdapter(adapter);
         binding.tabLayout.setupWithViewPager(binding.viewPager);
+        binding.tabLayout.getTabAt(0).setIcon(R.drawable.ic_red_line_ring);
+        binding.tabLayout.getTabAt(1).setIcon(R.drawable.ic_blue_line_logo);
+        binding.tabLayout.getTabAt(2).setIcon(R.drawable.ic_green_line_logo);
         bus = EventBus.getDefault();
         setTabListener();
     }

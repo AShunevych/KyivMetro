@@ -21,6 +21,7 @@
         <activity android:name=".JSONSearchActivity"
             android:parentActivityName=".MainActivity"
             android:screenOrientation="portrait"
+            android:label="@string/search"
           >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
@@ -32,13 +33,13 @@
         </activity>
 
         <activity android:name=".SearchResultActivity"
-            android:parentActivityName=".MainActivity"
+            android:parentActivityName=".JSONSearchActivity"
             android:screenOrientation="portrait"
-            android:theme="@style/AppThemeDefaultNoBar"
+            android:label="@string/searchRes"
             >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MainActivity" />
+                android:value=".JSONSearchActivity" />
 
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />

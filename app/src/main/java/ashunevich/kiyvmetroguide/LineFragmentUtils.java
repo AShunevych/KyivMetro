@@ -2,9 +2,13 @@ package ashunevich.kiyvmetroguide;
 
 import android.content.Context;
 
+import org.greenrobot.eventbus.EventBus;
+import org.json.JSONObject;
+
 import java.io.IOException;
 import java.io.InputStream;
 import java.nio.charset.StandardCharsets;
+import java.util.Objects;
 
 
 abstract class LineFragmentUtils {
@@ -24,6 +28,26 @@ abstract class LineFragmentUtils {
         return json;
     }
 
+    static public void jsonObjToText(EventBus bus,String createdJsonName, String stationName,Context context) {
+        bus = EventBus.getDefault();
+        try {
+            JSONObject emp = (new JSONObject(loadJsonEvent(createdJsonName,
+                    Objects.requireNonNull(context)))).getJSONObject(stationName);
+            String mStation = emp.getString("Station");
+            String mBusRoutes = emp.getString("Bus");
+            String mTrolleyRoutes = emp.getString("Trolleybus");
+            String mTaxicabRoutesU = emp.getString("TaxicabUrban");
+            String mTaxicabRoutesSU = emp.getString("TaxicabSuburban");
+            String mStreets = emp.getString("Exit To");
+            String mNotes = emp.getString("Notes");
+            bus.post(new SendTextEvent(mStation,
+                    mBusRoutes,mTrolleyRoutes,
+                    mTaxicabRoutesU,mTaxicabRoutesSU
+                    ,mStreets,mNotes));
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
 
 
 }

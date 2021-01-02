@@ -78,7 +78,7 @@ public class JSONSearchActivity extends AppCompatActivity {
 
 
     private void buildRecyclerWithJson(){
-        if(LOCALE.equals("русский")){
+        if(LOCALE.toLowerCase().contains(("uk"))){
             loadJsonToRecycler("SearchInfo_Ukr.json");
         }
         else{

@@ -421,7 +421,6 @@
                 android:layout_marginStart="8dp"
                 android:layout_marginTop="4dp"
                 android:layout_marginEnd="8dp"
-                android:drawableStart="@drawable/ic_blue_line_logo"
                 android:gravity="center|center_horizontal|center_vertical"
                 android:text="@string/blue_line_name"
                 app:layout_constraintEnd_toEndOf="parent"
