@@ -13,9 +13,6 @@ import com.google.gson.Gson;
 import org.json.JSONArray;
 import org.json.JSONObject;
 
-import java.io.IOException;
-import java.io.InputStream;
-import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 import java.util.Locale;
 
@@ -88,7 +85,7 @@ public class JSONSearchActivity extends AppCompatActivity {
 
     private void loadJsonToRecycler(String loadJSON)  {
         try {
-            JSONObject jsonObject = new JSONObject(loadJsonEvent(loadJSON));
+            JSONObject jsonObject = new JSONObject(Utils.loadJsonEvent(loadJSON,this));
             JSONArray message = jsonObject.getJSONArray("Station");
             Gson gson =new Gson();
             for (int i = 0; i <= message.length(); i++) {
@@ -106,20 +103,6 @@ public class JSONSearchActivity extends AppCompatActivity {
 
     }
 
-    public String loadJsonEvent(String jsonName) {
-        String json = null;
-        try {
-            InputStream inputStream = getApplicationContext().getAssets().open(jsonName);
-            int size = inputStream.available();
-            byte[] buffer = new byte[size];
-            inputStream.read(buffer);
-            inputStream.close();
-            json = new String(buffer, StandardCharsets.UTF_8);
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-        return json;
-    }
 
 
 }

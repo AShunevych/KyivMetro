@@ -17,8 +17,8 @@ import ashunevich.kiyvmetroguide.databinding.RedLineActivityBinding;
 public class RedLineFragment extends Fragment {
 
     private RedLineActivityBinding binding;
-    String LOCALE;
-    EventBus bus;
+    String CURRENT_LOCALE;
+    EventBus busEvent;
 
 
     public RedLineFragment() {
@@ -34,12 +34,10 @@ public class RedLineFragment extends Fragment {
     public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-
         binding = RedLineActivityBinding.inflate(inflater, container, false);
         View view = binding.getRoot();
-        LOCALE = Locale.getDefault().getDisplayLanguage();
+        CURRENT_LOCALE = Locale.getDefault().getDisplayLanguage();
         setRedLineButtonsBindings();
-     //   Log.d("Locale is", LOCALE);
         return view;
     }
 
@@ -49,35 +47,29 @@ public class RedLineFragment extends Fragment {
         super.onDestroyView();
     }
 
+    //Buttons click listeners
     private void setRedLineButtonsBindings(){
-        binding.akadem.setOnClickListener (v ->mSetAndSendText(getResources().getString(R.string.Akademmistechko)));
-        binding.zhyto.setOnClickListener (v ->mSetAndSendText(getResources().getString(R.string.Zhytomyrska)));
-        binding.sviatoshyn.setOnClickListener (v ->mSetAndSendText(getResources().getString(R.string.Sviatoshyn)));
-        binding.nyvky.setOnClickListener (v ->mSetAndSendText(getResources().getString(R.string.Nyvky)));
-        binding.berest.setOnClickListener (v ->mSetAndSendText(getResources().getString(R.string.Beresteiska)));
-        binding.shuliavka.setOnClickListener (v ->mSetAndSendText(getResources().getString(R.string.Shuliavska)));
-        binding.politech.setOnClickListener (v ->mSetAndSendText(getResources().getString(R.string.PolitechJSON)));
-        binding.vokzal.setOnClickListener (v ->mSetAndSendText(getResources().getString(R.string.Vokzalna)));
-        binding.univer.setOnClickListener (v ->mSetAndSendText(getResources().getString(R.string.Universytet)));
-        binding.teatr.setOnClickListener (v ->mSetAndSendText(getResources().getString(R.string.Teatralna)));
-        binding.krest.setOnClickListener (v ->mSetAndSendText(getResources().getString(R.string.Khreshchatyk)));
-        binding.arsenal.setOnClickListener (v ->mSetAndSendText(getResources().getString(R.string.Arsenalna)));
-        binding.dnipro.setOnClickListener (v ->mSetAndSendText(getResources().getString(R.string.Dnipro)));
-        binding.park.setOnClickListener (v ->mSetAndSendText(getResources().getString(R.string.Hidropark)));
-        binding.livoberezhna.setOnClickListener (v ->mSetAndSendText(getResources().getString(R.string.Livoberezhna)));
-        binding.darnytsia.setOnClickListener (v ->mSetAndSendText(getResources().getString(R.string.Darnytsia)));
-        binding.chernihiv.setOnClickListener (v ->mSetAndSendText(getResources().getString(R.string.Chernihivska)));
-        binding.lisova.setOnClickListener (v ->mSetAndSendText(getResources().getString(R.string.Lisova)));
+        binding.akadem.setOnClickListener (v -> Utils.setStationInfo(getResources().getString(R.string.Akademmistechko), CURRENT_LOCALE, busEvent,requireContext()));
+        binding.zhyto.setOnClickListener (v -> Utils.setStationInfo(getResources().getString(R.string.Zhytomyrska), CURRENT_LOCALE, busEvent,requireContext()));
+        binding.sviatoshyn.setOnClickListener (v -> Utils.setStationInfo(getResources().getString(R.string.Sviatoshyn), CURRENT_LOCALE, busEvent,requireContext()));
+        binding.nyvky.setOnClickListener (v -> Utils.setStationInfo(getResources().getString(R.string.Nyvky), CURRENT_LOCALE, busEvent,requireContext()));
+        binding.berest.setOnClickListener (v -> Utils.setStationInfo(getResources().getString(R.string.Beresteiska), CURRENT_LOCALE, busEvent,requireContext()));
+        binding.shuliavka.setOnClickListener (v -> Utils.setStationInfo(getResources().getString(R.string.Shuliavska), CURRENT_LOCALE, busEvent,requireContext()));
+        binding.politech.setOnClickListener (v -> Utils.setStationInfo(getResources().getString(R.string.PolitechJSON), CURRENT_LOCALE, busEvent,requireContext()));
+        binding.vokzal.setOnClickListener (v -> Utils.setStationInfo(getResources().getString(R.string.Vokzalna), CURRENT_LOCALE, busEvent,requireContext()));
+        binding.univer.setOnClickListener (v -> Utils.setStationInfo(getResources().getString(R.string.Universytet), CURRENT_LOCALE, busEvent,requireContext()));
+        binding.teatr.setOnClickListener (v -> Utils.setStationInfo(getResources().getString(R.string.Teatralna), CURRENT_LOCALE, busEvent,requireContext()));
+        binding.krest.setOnClickListener (v -> Utils.setStationInfo(getResources().getString(R.string.Khreshchatyk), CURRENT_LOCALE, busEvent,requireContext()));
+        binding.arsenal.setOnClickListener (v -> Utils.setStationInfo(getResources().getString(R.string.Arsenalna),CURRENT_LOCALE, busEvent,requireContext()));
+        binding.dnipro.setOnClickListener (v -> Utils.setStationInfo(getResources().getString(R.string.Dnipro), CURRENT_LOCALE, busEvent,requireContext()));
+        binding.park.setOnClickListener (v -> Utils.setStationInfo(getResources().getString(R.string.Hidropark), CURRENT_LOCALE, busEvent,requireContext()));
+        binding.livoberezhna.setOnClickListener (v -> Utils.setStationInfo(getResources().getString(R.string.Livoberezhna), CURRENT_LOCALE, busEvent,requireContext()));
+        binding.darnytsia.setOnClickListener (v -> Utils.setStationInfo(getResources().getString(R.string.Darnytsia), CURRENT_LOCALE, busEvent,requireContext()));
+        binding.chernihiv.setOnClickListener (v -> Utils.setStationInfo(getResources().getString(R.string.Chernihivska), CURRENT_LOCALE, busEvent,requireContext()));
+        binding.lisova.setOnClickListener (v -> Utils.setStationInfo(getResources().getString(R.string.Lisova), CURRENT_LOCALE, busEvent,requireContext()));
+
     }
 
-    private void mSetAndSendText(String stationName) {
-        if(LOCALE.toLowerCase().contains(("українська"))){
-            LineFragmentUtils.jsonObjToText(bus,"StationInfo_Ukr.json",stationName,requireContext());
-        }
-        else{
-            LineFragmentUtils.jsonObjToText(bus,"StationInfo.json",stationName,requireContext());
-        }
-    }
 }
 
 

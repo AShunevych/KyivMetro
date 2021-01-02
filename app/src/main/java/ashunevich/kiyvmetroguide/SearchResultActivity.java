@@ -33,15 +33,14 @@ public class SearchResultActivity extends AppCompatActivity {
 
     private void setResult(String stationName) {
         if(LOCALE.toLowerCase().contains(("українська"))){
-            jsonToTextView("StationInfo_Ukr.json",stationName);
+            serResultTextFromJson("StationInfo_Ukr.json",stationName);
         }
       else{
-            jsonToTextView("StationInfo.json",stationName);
+            serResultTextFromJson("StationInfo.json",stationName);
         }
     }
 
-
-    public void jsonToTextView(String loadedJson, String loadedIntentValue) throws NullPointerException {
+    public void serResultTextFromJson(String loadedJson, String loadedIntentValue) throws NullPointerException {
         try {
             JSONObject emp = (new JSONObject(LineFragmentUtils.loadJsonEvent(loadedJson,
                     this)))

@@ -11,9 +11,9 @@ import java.nio.charset.StandardCharsets;
 import java.util.Objects;
 
 
-abstract class LineFragmentUtils {
+abstract class Utils {
 
-    static public String loadJsonEvent(String jsonName, Context context) {
+    static protected String loadJsonEvent(String jsonName, Context context) {
         String json = null;
         try {
             InputStream inputStream = context.getAssets().open(jsonName);
@@ -50,6 +50,16 @@ abstract class LineFragmentUtils {
             e.printStackTrace();
         }
     }
+
+    static protected void setStationInfo ( String stationName, String locale, EventBus bus, Context context){
+        if(locale.toLowerCase().contains(("українська"))){
+           jsonObjToText(bus,"StationInfo_Ukr.json",stationName,context);
+        }
+        else{
+           jsonObjToText(bus,"StationInfo.json",stationName,context);
+        }
+    }
+
 
 
 }

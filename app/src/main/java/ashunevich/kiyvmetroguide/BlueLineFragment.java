@@ -48,31 +48,23 @@ public class BlueLineFragment extends Fragment {
 
 
     private void setBlueLineButtonsBindings(){
-        binding.heroiv.setOnClickListener (v -> mSetAndSendText(getResources().getString(R.string.Heroiv_Dnipra)));
-        binding.minska.setOnClickListener (v -> mSetAndSendText(getResources().getString(R.string.Minska)));
-        binding.Obolon.setOnClickListener (v -> mSetAndSendText(getResources().getString(R.string.Obolon)));
-        binding.Pochaina.setOnClickListener (v -> mSetAndSendText(getResources().getString(R.string.Pochaina)));
-        binding.Kontraktova.setOnClickListener (v -> mSetAndSendText(getResources().getString(R.string.KontraktovaJSON)));
-        binding.Poshtova.setOnClickListener (v -> mSetAndSendText(getResources().getString(R.string.PoshtovaJSON)));
-        binding.Maidan.setOnClickListener (v -> mSetAndSendText(getResources().getString(R.string.MaidanJSON)));
-        binding.LvaTolstoga.setOnClickListener (v -> mSetAndSendText(getResources().getString(R.string.LvaJSON)));
-        binding.Olimpiiska.setOnClickListener (v -> mSetAndSendText(getResources().getString(R.string.Olimpiiska)));
-        binding.PalatsUA.setOnClickListener (v -> mSetAndSendText(getResources().getString(R.string.Palats)));
-        binding.lybidska.setOnClickListener (v -> mSetAndSendText(getResources().getString(R.string.Lybidska)));
-        binding.Demiivska.setOnClickListener (v ->  mSetAndSendText(getResources().getString(R.string.Demiivska)));
-        binding.Holosiivska.setOnClickListener (v -> mSetAndSendText(getResources().getString(R.string.Holosiivska)));
-        binding.Vasylkiivska.setOnClickListener (v -> mSetAndSendText(getResources().getString(R.string.Vasylkivska)));
-        binding.Vystavkovyi.setOnClickListener (v -> mSetAndSendText(getResources().getString(R.string.VystavkovyiJSON)));
-        binding.Ipodrom.setOnClickListener (v -> mSetAndSendText(getResources().getString(R.string.Ipodrom)));
-        binding.Teremnky.setOnClickListener (v -> mSetAndSendText(getResources().getString(R.string.Teremky)));
+        binding.heroiv.setOnClickListener (v -> Utils.setStationInfo(getResources().getString(R.string.Heroiv_Dnipra),LOCALE,bus,requireContext()));
+        binding.minska.setOnClickListener (v -> Utils.setStationInfo(getResources().getString(R.string.Minska),LOCALE,bus,requireContext()));
+        binding.Obolon.setOnClickListener (v -> Utils.setStationInfo(getResources().getString(R.string.Obolon),LOCALE,bus,requireContext()));
+        binding.Pochaina.setOnClickListener (v -> Utils.setStationInfo(getResources().getString(R.string.Pochaina),LOCALE,bus,requireContext()));
+        binding.Kontraktova.setOnClickListener (v -> Utils.setStationInfo(getResources().getString(R.string.KontraktovaJSON),LOCALE,bus,requireContext()));
+        binding.Poshtova.setOnClickListener (v -> Utils.setStationInfo(getResources().getString(R.string.PoshtovaJSON),LOCALE,bus,requireContext()));
+        binding.Maidan.setOnClickListener (v -> Utils.setStationInfo(getResources().getString(R.string.MaidanJSON),LOCALE,bus,requireContext()));
+        binding.LvaTolstoga.setOnClickListener (v -> Utils.setStationInfo(getResources().getString(R.string.LvaJSON),LOCALE,bus,requireContext()));
+        binding.Olimpiiska.setOnClickListener (v -> Utils.setStationInfo(getResources().getString(R.string.Olimpiiska),LOCALE,bus,requireContext()));
+        binding.PalatsUA.setOnClickListener (v -> Utils.setStationInfo(getResources().getString(R.string.Palats),LOCALE,bus,requireContext()));
+        binding.lybidska.setOnClickListener (v -> Utils.setStationInfo(getResources().getString(R.string.Lybidska),LOCALE,bus,requireContext()));
+        binding.Demiivska.setOnClickListener (v ->  Utils.setStationInfo(getResources().getString(R.string.Demiivska),LOCALE,bus,requireContext()));
+        binding.Holosiivska.setOnClickListener (v -> Utils.setStationInfo(getResources().getString(R.string.Holosiivska),LOCALE,bus,requireContext()));
+        binding.Vasylkiivska.setOnClickListener (v -> Utils.setStationInfo(getResources().getString(R.string.Vasylkivska),LOCALE,bus,requireContext()));
+        binding.Vystavkovyi.setOnClickListener (v -> Utils.setStationInfo(getResources().getString(R.string.VystavkovyiJSON),LOCALE,bus,requireContext()));
+        binding.Ipodrom.setOnClickListener (v -> Utils.setStationInfo(getResources().getString(R.string.Ipodrom),LOCALE,bus,requireContext()));
+        binding.Teremnky.setOnClickListener (v -> Utils.setStationInfo(getResources().getString(R.string.Teremky),LOCALE,bus,requireContext()));
     }
 
-    private void mSetAndSendText(String stationName) {
-        if(LOCALE.toLowerCase().contains(("українська"))){
-            LineFragmentUtils.jsonObjToText(bus,"StationInfo_Ukr.json",stationName,requireContext());
-        }
-        else{
-            LineFragmentUtils.jsonObjToText(bus,"StationInfo.json",stationName,requireContext());
-        }
-    }
 }
