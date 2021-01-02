@@ -68,7 +68,7 @@ public class BlueLineFragment extends Fragment {
     }
 
     private void mSetAndSendText(String stationName) {
-        if(LOCALE.toLowerCase().contains(("uk"))){
+        if(LOCALE.toLowerCase().contains(("українська"))){
             LineFragmentUtils.jsonObjToText(bus,"StationInfo_Ukr.json",stationName,requireContext());
         }
         else{
