@@ -64,14 +64,4 @@ public class GreenLineFragment extends Fragment {
         binding.redhutir.setOnClickListener (v -> Utils.setStationInfo(getResources().getString(R.string.KhutirJSON),LOCALE,bus,requireContext()));
     }
 
-    private void mSetAndSendText(String stationName) {
-        if(LOCALE.toLowerCase().contains(("українська"))){
-            LineFragmentUtils.jsonObjToText(bus,"StationInfo_Ukr.json",stationName,requireContext());
-        }
-        else{
-            LineFragmentUtils.jsonObjToText(bus,"StationInfo.json",stationName,requireContext());
-        }
-    }
-
-
 }

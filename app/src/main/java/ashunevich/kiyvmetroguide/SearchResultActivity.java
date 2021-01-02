@@ -42,9 +42,7 @@ public class SearchResultActivity extends AppCompatActivity {
 
     public void serResultTextFromJson(String loadedJson, String loadedIntentValue) throws NullPointerException {
         try {
-            JSONObject emp = (new JSONObject(LineFragmentUtils.loadJsonEvent(loadedJson,
-                    this)))
-                    .getJSONObject(loadedIntentValue);
+            JSONObject emp = (new JSONObject(Utils.loadJsonEvent(loadedJson,this))).getJSONObject(loadedIntentValue);
             binding.infoStation.setText(emp.getString("Station"));
             binding.infoLine.setText(emp.getString("Line"));
             binding.busInfo.setText(emp.getString("Bus"));
@@ -58,4 +56,5 @@ public class SearchResultActivity extends AppCompatActivity {
         }
 
     }
+
 }

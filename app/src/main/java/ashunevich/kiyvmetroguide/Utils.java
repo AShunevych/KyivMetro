@@ -28,9 +28,7 @@ abstract class Utils {
         return json;
     }
 
-
-
-    static public void jsonObjToText(EventBus bus,String createdJsonName, String stationName,Context context) {
+    static protected void jsonObjToText(EventBus bus,String createdJsonName, String stationName,Context context) {
         bus = EventBus.getDefault();
         try {
             JSONObject emp = (new JSONObject(loadJsonEvent(createdJsonName,
