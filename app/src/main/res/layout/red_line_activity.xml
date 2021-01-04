@@ -2,22 +2,20 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/relativeLayout3"
+    android:id="@+id/relativeLayout2"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     >
 
     <ScrollView
         android:id="@+id/redLine_Fragment_Scroll"
-        style="@android:style/Widget.DeviceDefault.Light.ScrollView"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignEnd="@id/divider3"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_alignParentBottom="true"
         android:layout_marginTop="0dp"
-        android:layout_marginEnd="2dp"
         android:layout_marginBottom="0dp">
 
         <android.support.constraint.ConstraintLayout
@@ -25,334 +23,164 @@
             android:layout_height="wrap_content">
 
 
-            <Button
-                android:id="@+id/berest"
-                android:layout_width="19dp"
-                android:layout_height="20dp"
-                android:background="@drawable/ic_red_ring_svg"
-                app:layout_constraintEnd_toEndOf="@+id/akadem"
-                app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintStart_toStartOf="@+id/akadem"
-                app:layout_constraintTop_toBottomOf="@+id/view4" />
-
-            <Button
-                android:id="@+id/shuliavka"
-                android:layout_width="19dp"
-                android:layout_height="20dp"
-                android:background="@drawable/ic_red_ring_svg"
-                app:layout_constraintEnd_toEndOf="@+id/akadem"
-                app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintStart_toStartOf="@+id/akadem"
-                app:layout_constraintTop_toBottomOf="@+id/view5" />
-
-            <Button
-                android:id="@+id/politech"
-                android:layout_width="19dp"
-                android:layout_height="20dp"
-                android:background="@drawable/ic_red_ring_svg"
-                app:layout_constraintEnd_toEndOf="@+id/akadem"
-                app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintStart_toStartOf="@+id/akadem"
-                app:layout_constraintTop_toBottomOf="@+id/view" />
-
-            <Button
-                android:id="@+id/akadem"
-                android:layout_width="19dp"
-                android:layout_height="20dp"
-                android:layout_marginStart="8dp"
-                android:layout_marginTop="8dp"
-                android:background="@drawable/ic_red_ring_startsvg"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView37" />
-
-            <Button
-                android:id="@+id/zhyto"
-                android:layout_width="19dp"
-                android:layout_height="20dp"
-                android:background="@drawable/ic_red_ring_svg"
-                app:layout_constraintEnd_toEndOf="@+id/akadem"
-                app:layout_constraintStart_toStartOf="@+id/akadem"
-                app:layout_constraintTop_toBottomOf="@+id/view1" />
-
-            <Button
-                android:id="@+id/sviatoshyn"
-                android:layout_width="19dp"
-                android:layout_height="20dp"
-                android:background="@drawable/ic_red_ring_svg"
-                app:layout_constraintEnd_toEndOf="@+id/akadem"
-                app:layout_constraintStart_toStartOf="@+id/akadem"
-                app:layout_constraintTop_toBottomOf="@+id/view2" />
-
-            <Button
-                android:id="@+id/nyvky"
-                android:layout_width="19dp"
-                android:layout_height="20dp"
-                android:background="@drawable/ic_red_ring_svg"
-                app:layout_constraintEnd_toEndOf="@+id/akadem"
-                app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintStart_toStartOf="@+id/akadem"
-                app:layout_constraintTop_toBottomOf="@+id/view3" />
-
-            <Button
-                android:id="@+id/lisova"
-                android:layout_width="19dp"
-                android:layout_height="20dp"
-                android:background="@drawable/ic_red_ring_svg"
-                app:layout_constraintEnd_toEndOf="@+id/akadem"
-                app:layout_constraintStart_toStartOf="@+id/akadem"
-                app:layout_constraintTop_toBottomOf="@+id/view11" />
-
-            <Button
-                android:id="@+id/chernihiv"
-                android:layout_width="19dp"
-                android:layout_height="20dp"
-                android:background="@drawable/ic_red_ring_svg"
-                app:layout_constraintEnd_toEndOf="@+id/akadem"
-                app:layout_constraintStart_toStartOf="@+id/akadem"
-                app:layout_constraintTop_toBottomOf="@+id/view10" />
-
-            <Button
-                android:id="@+id/darnytsia"
-                android:layout_width="19dp"
-                android:layout_height="20dp"
-                android:background="@drawable/ic_red_ring_svg"
-                app:layout_constraintEnd_toEndOf="@+id/akadem"
-                app:layout_constraintStart_toStartOf="@+id/akadem"
-                app:layout_constraintTop_toBottomOf="@+id/view9" />
-
-            <Button
-                android:id="@+id/dnipro"
-                android:layout_width="19dp"
-                android:layout_height="20dp"
-                android:background="@drawable/ic_red_ring_svg"
-                app:layout_constraintEnd_toEndOf="@+id/akadem"
-                app:layout_constraintStart_toStartOf="@+id/akadem"
-                app:layout_constraintTop_toBottomOf="@+id/view17" />
-
-            <Button
-                android:id="@+id/arsenal"
-                android:layout_width="19dp"
-                android:layout_height="20dp"
-                android:background="@drawable/ic_red_ring_svg"
-                app:layout_constraintEnd_toEndOf="@+id/akadem"
-                app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintStart_toStartOf="@+id/akadem"
-                app:layout_constraintTop_toBottomOf="@+id/view16" />
-
-            <Button
-                android:id="@+id/teatr"
-                android:layout_width="19dp"
-                android:layout_height="20dp"
-                android:background="@drawable/ic_red_ring_svg"
-                app:layout_constraintEnd_toEndOf="@+id/akadem"
-                app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintStart_toStartOf="@+id/akadem"
-                app:layout_constraintTop_toBottomOf="@+id/view14" />
-
-            <Button
-                android:id="@+id/univer"
-                android:layout_width="19dp"
-                android:layout_height="20dp"
-                android:background="@drawable/ic_red_ring_svg"
-                app:layout_constraintEnd_toEndOf="@+id/akadem"
-                app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintStart_toStartOf="@+id/akadem"
-                app:layout_constraintTop_toBottomOf="@+id/view7" />
-
-            <Button
-                android:id="@+id/vokzal"
-                android:layout_width="19dp"
-                android:layout_height="20dp"
-                android:background="@drawable/ic_red_ring_svg"
-                app:layout_constraintEnd_toEndOf="@+id/akadem"
-                app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintStart_toStartOf="@+id/akadem"
-                app:layout_constraintTop_toBottomOf="@+id/view6" />
-
-            <Button
-                android:id="@+id/krest"
-                android:layout_width="19dp"
-                android:layout_height="20dp"
-                android:background="@drawable/ic_red_ring_svg"
-                app:layout_constraintEnd_toEndOf="@+id/akadem"
-                app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintStart_toStartOf="@+id/akadem"
-                app:layout_constraintTop_toBottomOf="@+id/view15" />
-
-            <Button
-                android:id="@+id/livoberezhna"
-                android:layout_width="19dp"
-                android:layout_height="20dp"
-                android:background="@drawable/ic_red_ring_svg"
-                app:layout_constraintEnd_toEndOf="@+id/akadem"
-                app:layout_constraintStart_toStartOf="@+id/akadem"
-                app:layout_constraintTop_toBottomOf="@+id/view19" />
-
-            <Button
-                android:id="@+id/park"
-                android:layout_width="19dp"
-                android:layout_height="20dp"
-                android:background="@drawable/ic_red_ring_svg"
-                app:layout_constraintEnd_toEndOf="@+id/akadem"
-                app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintStart_toStartOf="@+id/akadem"
-                app:layout_constraintTop_toBottomOf="@+id/view18" />
-
-            <TextView
-                android:id="@+id/textView37"
-                style="@style/TextAppearance_FragmentText"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="8dp"
-                android:layout_marginTop="4dp"
-                android:layout_marginEnd="8dp"
-                android:drawableStart="@drawable/ic_red_line_ring"
-                android:gravity="center_horizontal|center_vertical"
-                android:paddingStart="4dp"
-                android:paddingEnd="4dp"
-                android:text="@string/red_line_name"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-
             <TextView
                 android:id="@+id/textView15"
                 style="@style/TextAppearance_FragmentText"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="4dp"
-                android:layout_marginEnd="8dp"
-                android:gravity="start"
+                android:layout_marginTop="8dp"
+                android:gravity="center"
                 android:text="@string/Akademmistechko"
-                app:layout_constraintBottom_toBottomOf="@+id/akadem"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/akadem" />
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView27" />
 
             <TextView
-                android:id="@+id/textView18"
+                android:id="@+id/textView16"
                 style="@style/TextAppearance_FragmentText"
                 android:layout_width="0dp"
-                android:layout_height="0dp"
-                android:layout_marginEnd="8dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="2dp"
+                android:gravity="center"
                 android:text="@string/Zhytomyrska"
-                app:layout_constraintBottom_toBottomOf="@+id/zhyto"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="@+id/textView15"
-                app:layout_constraintTop_toBottomOf="@+id/view1" />
+                android:textSize="10sp"
+                app:layout_constraintEnd_toStartOf="@+id/view1"
+                app:layout_constraintTop_toBottomOf="@+id/akadem" />
 
             <TextView
                 android:id="@+id/textView2"
                 style="@style/TextAppearance_FragmentText"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginEnd="8dp"
-
-                android:gravity="start|center_horizontal|center_vertical"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="2dp"
                 android:text="@string/Sviatoshyn"
-                app:layout_constraintBottom_toTopOf="@+id/view3"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="@+id/textView18"
-                app:layout_constraintTop_toTopOf="@+id/sviatoshyn" />
+                android:textSize="12sp"
+                app:layout_constraintEnd_toStartOf="@+id/view1"
+                app:layout_constraintTop_toBottomOf="@+id/zhyto" />
 
             <TextView
                 android:id="@+id/textView3"
                 style="@style/TextAppearance_FragmentText"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginEnd="8dp"
-                android:gravity="start"
-                android:text="@string/Nyvky"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="@+id/textView2"
-                app:layout_constraintTop_toTopOf="@+id/nyvky" />
 
-            <TextView
-                android:id="@+id/textView5"
-                style="@style/TextAppearance_FragmentText"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:gravity="start"
-                android:text="@string/Shuliavska"
-                app:layout_constraintBottom_toBottomOf="@+id/shuliavka"
-                app:layout_constraintEnd_toEndOf="@+id/textView3"
-                app:layout_constraintStart_toStartOf="@+id/textView4"
-                app:layout_constraintTop_toTopOf="@+id/shuliavka" />
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="2dp"
+                android:text="@string/Nyvky"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toStartOf="@+id/view1"
+                app:layout_constraintTop_toBottomOf="@+id/sviatoshyn" />
 
             <TextView
                 android:id="@+id/textView7"
                 style="@style/TextAppearance_FragmentText"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-
-                android:gravity="start|center_horizontal|center_vertical"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="2dp"
+                android:gravity="center"
                 android:text="@string/Vokzalna"
-                app:layout_constraintBottom_toBottomOf="@+id/vokzal"
-                app:layout_constraintEnd_toEndOf="@+id/textView6"
-                app:layout_constraintStart_toStartOf="@+id/textView6"
-                app:layout_constraintTop_toTopOf="@+id/vokzal" />
+                android:textSize="12sp"
+                app:layout_constraintEnd_toStartOf="@+id/view1"
+                app:layout_constraintTop_toBottomOf="@+id/politech" />
+
+            <TextView
+                android:id="@+id/textView8"
+                style="@style/TextAppearance_FragmentText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="2dp"
+                android:text="@string/Universytet"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toStartOf="@+id/view1"
+                app:layout_constraintTop_toBottomOf="@+id/vokzal" />
 
             <TextView
                 android:id="@+id/textView9"
                 style="@style/TextAppearance_FragmentText"
-                android:layout_width="0dp"
-
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:gravity="start"
-                android:text="@string/Universytet"
-                app:layout_constraintEnd_toEndOf="@+id/textView7"
-                app:layout_constraintStart_toStartOf="@+id/textView7"
-                app:layout_constraintTop_toTopOf="@+id/univer" />
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="2dp"
+                android:gravity="center"
+                android:text="@string/Teatralna"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toStartOf="@+id/view1"
+                app:layout_constraintTop_toBottomOf="@+id/univer" />
+
+            <TextView
+                android:id="@+id/textView21"
+                style="@style/TextAppearance_FragmentText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:gravity="end"
+                android:text="@string/VorotaSpaced"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toTopOf="@+id/redGreenTransfer"
+                app:layout_constraintEnd_toEndOf="@+id/redGreenTransfer" />
+
+            <TextView
+                android:id="@+id/textView29"
+                style="@style/TextAppearance_FragmentText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:text="@string/Maidan"
+                android:textSize="10sp"
+                app:layout_constraintBottom_toTopOf="@+id/redBlueTransfer"
+                app:layout_constraintEnd_toEndOf="@+id/redBlueTransfer" />
 
             <TextView
                 android:id="@+id/textView10"
                 style="@style/TextAppearance_FragmentText"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:gravity="start"
-                android:text="@string/Teatralna"
-                app:layout_constraintBottom_toBottomOf="@+id/teatr"
-                app:layout_constraintEnd_toEndOf="@+id/textView9"
-                app:layout_constraintStart_toStartOf="@+id/textView9" />
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="2dp"
+                android:text="@string/Khreshchatyk"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="@+id/view1"
+                app:layout_constraintEnd_toStartOf="@+id/view1"
+                app:layout_constraintTop_toBottomOf="@+id/teatr" />
 
             <TextView
                 android:id="@+id/textView11"
                 style="@style/TextAppearance_FragmentText"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:gravity="start"
-                android:text="@string/Khreshchatyk"
-                android:textSize="11sp"
-                app:layout_constraintBottom_toBottomOf="@+id/krest"
-                app:layout_constraintEnd_toEndOf="@+id/textView10"
-                app:layout_constraintStart_toStartOf="@+id/textView10"
-                app:layout_constraintTop_toTopOf="@+id/krest" />
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="2dp"
+                android:text="@string/Arsenalna"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toStartOf="@+id/view1"
+                app:layout_constraintTop_toBottomOf="@+id/krest" />
 
             <TextView
                 android:id="@+id/textView12"
                 style="@style/TextAppearance_FragmentText"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="4dp"
-                android:layout_marginTop="2dp"
-                android:layout_marginEnd="8dp"
-                android:gravity="start"
-                android:text="@string/Arsenalna"
-                app:layout_constraintBottom_toBottomOf="@+id/arsenal"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/arsenal"
-                app:layout_constraintTop_toTopOf="@+id/arsenal" />
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="2dp"
+                android:text="@string/Dnipro"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toStartOf="@+id/view1"
+                app:layout_constraintTop_toBottomOf="@+id/arsenal" />
 
             <TextView
                 android:id="@+id/textView13"
                 style="@style/TextAppearance_FragmentText"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="4dp"
-                android:gravity="start"
-                android:text="@string/Dnipro"
-                app:layout_constraintEnd_toEndOf="@+id/textView12"
-                app:layout_constraintStart_toEndOf="@+id/dnipro"
-                app:layout_constraintTop_toTopOf="@+id/dnipro" />
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="2dp"
+                android:text="@string/Hidropark"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toStartOf="@+id/view1"
+                app:layout_constraintTop_toBottomOf="@+id/dnipro" />
 
             <TextView
                 android:id="@+id/textView14"
@@ -360,246 +188,321 @@
                 android:layout_width="0dp"
 
                 android:layout_height="wrap_content"
-                android:layout_marginStart="4dp"
-                android:gravity="start"
-                android:text="@string/Hidropark"
-                app:layout_constraintEnd_toEndOf="@+id/textView13"
-                app:layout_constraintStart_toEndOf="@+id/park"
-                app:layout_constraintTop_toTopOf="@+id/park" />
-
-            <TextView
-                android:id="@+id/textView17"
-                style="@style/TextAppearance_FragmentText"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="4dp"
-
-                android:gravity="start|center_horizontal|center_vertical"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="2dp"
+                android:gravity="center"
                 android:text="@string/Livoberezhna"
                 android:textSize="12sp"
-                app:layout_constraintBottom_toBottomOf="@+id/livoberezhna"
-                app:layout_constraintEnd_toEndOf="@+id/textView14"
-                app:layout_constraintStart_toEndOf="@+id/livoberezhna"
-                app:layout_constraintTop_toTopOf="@+id/livoberezhna" />
+                app:layout_constraintEnd_toStartOf="@+id/view1"
+                app:layout_constraintTop_toBottomOf="@+id/park" />
+
+            <TextView
+                android:id="@+id/textView39"
+                style="@style/TextAppearance_FragmentText"
+                android:layout_width="0dp"
+
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="2dp"
+                android:text="@string/Darnytsia"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toStartOf="@+id/view1"
+                app:layout_constraintTop_toBottomOf="@+id/livoberezhna" />
+
+            <TextView
+                android:id="@+id/textView"
+                style="@style/TextAppearance_FragmentText"
+                android:layout_width="0dp"
+
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="2dp"
+                android:gravity="center_horizontal"
+                android:text="@string/Lisova"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toStartOf="@+id/view1"
+                app:layout_constraintTop_toBottomOf="@+id/chernihiv" />
+
+            <TextView
+                android:id="@+id/textView20"
+                style="@style/TextAppearance_FragmentText"
+                android:layout_width="0dp"
+
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="2dp"
+                android:gravity="center_horizontal"
+                android:text="@string/Chernihivska"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toStartOf="@+id/view1"
+                app:layout_constraintTop_toBottomOf="@+id/darnytsia" />
 
             <TextView
                 android:id="@+id/textView6"
                 style="@style/TextAppearance_FragmentText"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginEnd="8dp"
 
-                android:gravity="start|center_horizontal|center_vertical"
-                android:text="@string/PolitechJSON"
-                app:layout_constraintBottom_toBottomOf="@+id/politech"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="@+id/textView5"
-                app:layout_constraintTop_toTopOf="@+id/politech"
-                app:layout_constraintVertical_bias="0.49" />
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="2dp"
+                android:gravity="center"
+                android:text="@string/Politekhnichnyi_Instytut"
+                app:layout_constraintEnd_toStartOf="@+id/view1"
+                app:layout_constraintTop_toBottomOf="@+id/shuliavka" />
 
             <TextView
                 android:id="@+id/textView4"
                 style="@style/TextAppearance_FragmentText"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginEnd="8dp"
-
-                android:gravity="start|center_horizontal|center_vertical"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="2dp"
+                android:gravity="center"
                 android:text="@string/Beresteiska"
-                app:layout_constraintBottom_toTopOf="@+id/view5"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="@+id/textView3"
-                app:layout_constraintTop_toTopOf="@+id/berest" />
+                android:textSize="11sp"
+                app:layout_constraintEnd_toStartOf="@+id/view1"
+                app:layout_constraintTop_toBottomOf="@+id/nyvky" />
 
             <TextView
                 android:id="@+id/textView19"
                 style="@style/TextAppearance_FragmentText"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="4dp"
-                android:gravity="start"
-                android:text="@string/Darnytsia"
-                app:layout_constraintEnd_toEndOf="@+id/textView14"
-                app:layout_constraintHorizontal_bias="1.0"
-                app:layout_constraintStart_toEndOf="@+id/darnytsia"
-                app:layout_constraintTop_toTopOf="@+id/darnytsia" />
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="2dp"
+                android:gravity="center"
+                android:text="@string/Shuliavska"
+                app:layout_constraintEnd_toStartOf="@+id/view1"
+                app:layout_constraintTop_toBottomOf="@+id/berest" />
 
             <TextView
-                android:id="@+id/textView20"
+                android:id="@+id/textView27"
                 style="@style/TextAppearance_FragmentText"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="4dp"
-                android:text="@string/Chernihivska"
-                app:layout_constraintEnd_toEndOf="@+id/textView19"
-                app:layout_constraintStart_toEndOf="@+id/chernihiv"
-                app:layout_constraintTop_toTopOf="@+id/chernihiv" />
-
-            <TextView
-                android:id="@+id/textView21"
-                style="@style/TextAppearance_FragmentText"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="4dp"
-                android:gravity="start"
-                android:paddingBottom="8dp"
-                android:text="@string/Lisova"
-                app:layout_constraintBottom_toBottomOf="@+id/lisova"
-                app:layout_constraintEnd_toEndOf="@+id/textView19"
-                app:layout_constraintStart_toEndOf="@+id/lisova"
-                app:layout_constraintTop_toTopOf="@+id/lisova"
-                app:layout_constraintVertical_bias="0.0" />
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="8dp"
+                android:gravity="center|center_horizontal|center_vertical"
+                android:text="@string/red_line_name"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
             <View
                 android:id="@+id/view1"
-                android:layout_width="8dp"
-                android:layout_height="18dp"
+                android:layout_width="5dp"
+                android:layout_height="0dp"
                 android:background="@drawable/red_rect"
+                app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="@+id/akadem"
                 app:layout_constraintStart_toStartOf="@+id/akadem"
                 app:layout_constraintTop_toBottomOf="@+id/akadem" />
 
             <View
-                android:id="@+id/view2"
-                android:layout_width="8dp"
-                android:layout_height="18dp"
-                android:background="@drawable/red_rect"
-                app:layout_constraintEnd_toEndOf="@+id/akadem"
-                app:layout_constraintStart_toStartOf="@+id/akadem"
-                app:layout_constraintTop_toBottomOf="@+id/zhyto" />
-
-            <View
-                android:id="@+id/view3"
-                android:layout_width="8dp"
-                android:layout_height="18dp"
-                android:background="@drawable/red_rect"
-                app:layout_constraintEnd_toEndOf="@+id/akadem"
-                app:layout_constraintStart_toStartOf="@+id/akadem"
-                app:layout_constraintTop_toBottomOf="@+id/sviatoshyn" />
-
-            <View
-                android:id="@+id/view4"
-                android:layout_width="8dp"
-                android:layout_height="18dp"
-                android:background="@drawable/red_rect"
-                app:layout_constraintEnd_toEndOf="@+id/akadem"
-                app:layout_constraintStart_toStartOf="@+id/akadem"
-                app:layout_constraintTop_toBottomOf="@+id/nyvky" />
-
-            <View
-                android:id="@+id/view5"
-                android:layout_width="8dp"
-                android:layout_height="18dp"
-                android:background="@drawable/red_rect"
-                app:layout_constraintEnd_toEndOf="@+id/akadem"
-                app:layout_constraintStart_toStartOf="@+id/akadem"
-                app:layout_constraintTop_toBottomOf="@+id/berest" />
-
-            <View
-                android:id="@+id/view"
-                style="@style/Rectangle_long"
-                android:background="@drawable/red_rect"
-                app:layout_constraintEnd_toEndOf="@+id/akadem"
-                app:layout_constraintStart_toStartOf="@+id/akadem"
-                app:layout_constraintTop_toBottomOf="@+id/shuliavka" />
-
-            <View
                 android:id="@+id/view6"
-                style="@style/Rectangle_long"
+                android:layout_width="7.5dp"
+                android:layout_height="4dp"
                 android:background="@drawable/red_rect"
-                app:layout_constraintEnd_toEndOf="@+id/akadem"
-                app:layout_constraintStart_toStartOf="@+id/akadem"
-                app:layout_constraintTop_toBottomOf="@+id/politech" />
-
-            <View
-                android:id="@+id/view7"
-                android:layout_width="8dp"
-                android:layout_height="18dp"
-                android:background="@drawable/red_rect"
-                app:layout_constraintEnd_toEndOf="@+id/akadem"
-                app:layout_constraintStart_toStartOf="@+id/akadem"
-                app:layout_constraintTop_toBottomOf="@+id/vokzal" />
-
-            <View
-                android:id="@+id/view14"
-                android:layout_width="8dp"
-                android:layout_height="18dp"
-                android:background="@drawable/red_rect"
-                app:layout_constraintEnd_toEndOf="@+id/akadem"
-                app:layout_constraintStart_toStartOf="@+id/akadem"
-                app:layout_constraintTop_toBottomOf="@+id/univer" />
-
-            <View
-                android:id="@+id/view15"
-                android:layout_width="8dp"
-                android:layout_height="18dp"
-                android:background="@drawable/red_rect"
-                app:layout_constraintEnd_toEndOf="@+id/akadem"
-                app:layout_constraintStart_toStartOf="@+id/akadem"
-                app:layout_constraintTop_toBottomOf="@+id/teatr" />
-
-            <View
-                android:id="@+id/view16"
-                android:layout_width="8dp"
-                android:layout_height="18dp"
-                android:layout_marginEnd="5dp"
-                android:background="@drawable/red_rect"
-                app:layout_constraintEnd_toEndOf="@+id/akadem"
-                app:layout_constraintTop_toBottomOf="@+id/krest" />
-
-            <View
-                android:id="@+id/view17"
-                android:layout_width="8dp"
-                android:layout_height="18dp"
-                android:background="@drawable/red_rect"
-                app:layout_constraintEnd_toEndOf="@+id/akadem"
-                app:layout_constraintStart_toStartOf="@+id/akadem"
-                app:layout_constraintTop_toBottomOf="@+id/arsenal" />
-
-            <View
-                android:id="@+id/view18"
-                android:layout_width="8dp"
-                android:layout_height="18dp"
-                android:background="@drawable/red_rect"
-                app:layout_constraintEnd_toEndOf="@+id/akadem"
-                app:layout_constraintStart_toStartOf="@+id/akadem"
-                app:layout_constraintTop_toBottomOf="@+id/dnipro" />
-
-            <View
-                android:id="@+id/view19"
-                android:layout_width="8dp"
-                android:layout_height="18dp"
-                android:background="@drawable/red_rect"
-                app:layout_constraintEnd_toEndOf="@+id/akadem"
-                app:layout_constraintStart_toStartOf="@+id/akadem"
-                app:layout_constraintTop_toBottomOf="@+id/park" />
-
-            <View
-                android:id="@+id/view9"
-                android:layout_width="8dp"
-                android:layout_height="18dp"
-                android:background="@drawable/red_rect"
-                app:layout_constraintEnd_toEndOf="@+id/akadem"
-                app:layout_constraintStart_toStartOf="@+id/akadem"
-                app:layout_constraintTop_toBottomOf="@+id/livoberezhna" />
+                app:layout_constraintBottom_toBottomOf="@+id/teatr"
+                app:layout_constraintStart_toEndOf="@+id/teatr"
+                app:layout_constraintTop_toTopOf="@+id/teatr" />
 
             <View
                 android:id="@+id/view10"
-                android:layout_width="8dp"
-                android:layout_height="18dp"
+                android:layout_width="7.5dp"
+                android:layout_height="4dp"
                 android:background="@drawable/red_rect"
-                app:layout_constraintEnd_toEndOf="@+id/akadem"
-                app:layout_constraintStart_toStartOf="@+id/akadem"
-                app:layout_constraintTop_toBottomOf="@+id/darnytsia" />
+                app:layout_constraintBottom_toBottomOf="@+id/krest"
+                app:layout_constraintStart_toEndOf="@+id/krest"
+                app:layout_constraintTop_toTopOf="@+id/krest" />
+
+            <View
+                android:id="@+id/view9"
+                android:layout_width="7.5dp"
+                android:layout_height="4dp"
+                android:background="@drawable/green_rect"
+                app:layout_constraintBottom_toBottomOf="@+id/teatr"
+                app:layout_constraintStart_toEndOf="@+id/view6"
+                app:layout_constraintTop_toTopOf="@+id/teatr" />
 
             <View
                 android:id="@+id/view11"
-                android:layout_width="8dp"
-                android:layout_height="18dp"
-                android:background="@drawable/red_rect"
+                android:layout_width="7.5dp"
+                android:layout_height="4dp"
+                android:background="@drawable/blue_rect"
+                app:layout_constraintBottom_toBottomOf="@+id/view10"
+                app:layout_constraintStart_toEndOf="@+id/view6"
+                app:layout_constraintTop_toTopOf="@+id/view10" />
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/redGreenTransfer"
+                style="@style/FloatActionButtonMini_Green"
+                app:layout_constraintBottom_toBottomOf="@+id/teatr"
+                app:layout_constraintStart_toEndOf="@+id/view9"
+                app:layout_constraintTop_toTopOf="@+id/teatr" />
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/redBlueTransfer"
+                style="@style/FloatActionButtonMini_Blue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="@+id/krest"
+                app:layout_constraintStart_toEndOf="@+id/view11"
+                app:layout_constraintTop_toTopOf="@+id/krest" />
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/akadem"
+                style="@style/FloatActionButton_Red"
+                android:layout_marginTop="4dp"
+                app:borderWidth="5dp"
+                app:layout_constraintEnd_toEndOf="@+id/textView27"
+                app:layout_constraintStart_toStartOf="@+id/textView27"
+                app:layout_constraintTop_toBottomOf="@+id/textView15"
+                app:useCompatPadding="false" />
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/zhyto"
+                style="@style/FloatActionButton_Red"
                 app:layout_constraintEnd_toEndOf="@+id/akadem"
+                app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="@+id/akadem"
-                app:layout_constraintTop_toBottomOf="@+id/chernihiv" />
+                app:layout_constraintTop_toBottomOf="@+id/textView16" />
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/sviatoshyn"
+                style="@style/FloatActionButton_Red"
+                app:layout_constraintEnd_toEndOf="@+id/akadem"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/akadem"
+                app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/nyvky"
+                style="@style/FloatActionButton_Red"
+                app:layout_constraintEnd_toEndOf="@+id/akadem"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/akadem"
+                app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/berest"
+                style="@style/FloatActionButton_Red"
+                app:layout_constraintEnd_toEndOf="@+id/akadem"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/akadem"
+                app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/shuliavka"
+                style="@style/FloatActionButton_Red"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="@+id/berest"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/berest"
+                app:layout_constraintTop_toBottomOf="@+id/textView19" />
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/politech"
+                style="@style/FloatActionButton_Red"
+                app:layout_constraintEnd_toEndOf="@+id/akadem"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/akadem"
+                app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/arsenal"
+                style="@style/FloatActionButton_Red"
+                app:layout_constraintEnd_toEndOf="@+id/akadem"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/akadem"
+                app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/dnipro"
+                style="@style/FloatActionButton_Red_leftDoors"
+                app:layout_constraintEnd_toEndOf="@+id/akadem"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/akadem"
+                app:layout_constraintTop_toBottomOf="@+id/textView12" />
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/park"
+                style="@style/FloatActionButton_Red"
+                app:layout_constraintEnd_toEndOf="@+id/akadem"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="@+id/akadem"
+                app:layout_constraintTop_toBottomOf="@+id/textView13" />
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/livoberezhna"
+                style="@style/FloatActionButton_Red"
+                app:layout_constraintEnd_toEndOf="@+id/akadem"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="@+id/akadem"
+                app:layout_constraintTop_toBottomOf="@+id/textView14" />
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/darnytsia"
+                style="@style/FloatActionButton_Red"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="@+id/akadem"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="@+id/akadem"
+                app:layout_constraintTop_toBottomOf="@+id/textView39" />
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/chernihiv"
+                style="@style/FloatActionButton_Red"
+                app:layout_constraintEnd_toEndOf="@+id/akadem"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/akadem"
+                app:layout_constraintTop_toBottomOf="@+id/textView20" />
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/lisova"
+                style="@style/FloatActionButton_Red"
+                app:borderWidth="5dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/akadem"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="@+id/akadem"
+                app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/vokzal"
+                style="@style/FloatActionButton_Red"
+                app:layout_constraintEnd_toEndOf="@+id/akadem"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/akadem"
+                app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/univer"
+                style="@style/FloatActionButton_Red"
+                app:layout_constraintEnd_toEndOf="@+id/akadem"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/akadem"
+                app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/teatr"
+                style="@style/FloatActionButton_Red"
+                app:layout_constraintEnd_toEndOf="@+id/akadem"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/akadem"
+                app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/krest"
+                style="@style/FloatActionButton_Red"
+                app:layout_constraintEnd_toEndOf="@+id/akadem"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/akadem"
+                app:layout_constraintTop_toBottomOf="@+id/textView10" />
 
         </android.support.constraint.ConstraintLayout>
     </ScrollView>
@@ -609,19 +512,19 @@
         android:layout_width="2dp"
         android:layout_height="match_parent"
         android:layout_centerInParent="true"
-        android:background="?android:attr/listDivider"
-        android:padding="2dp" />
+        android:layout_centerVertical="true"
+        android:background="?android:attr/listDivider" />
 
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_alignStart="@id/divider3"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true">
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@+id/redLine_Fragment_Scroll">
 
         <fragment
-            android:id="@+id/fragment3"
+            android:id="@+id/information_frag"
             android:name="ashunevich.kiyvmetroguide.InformationFragment"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

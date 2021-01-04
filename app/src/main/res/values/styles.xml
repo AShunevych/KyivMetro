@@ -6,12 +6,19 @@
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textColor">@color/vectorColor</item>
+        <item name="android:windowBackground">@color/backgroundColor</item>
+        <item name="android:navigationBarColor">@color/backgroundColor</item>
     </style>
 
     <style name="AppThemeDefaultNoBar" parent="Theme.AppCompat.DayNight.NoActionBar">
         <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textColor">@color/vectorColor</item>
+        <item name="android:windowBackground">@color/backgroundColor</item>
+        <item name="android:navigationBarColor">@color/backgroundColor</item>
     </style>
 
 
@@ -22,6 +29,53 @@
         <item name="android:layout_marginEnd">8dp</item>
         <item name="android:fontFamily">sans-serif-medium</item>
         <item name="android:padding">2dp</item>
+    </style>
+
+
+    <style name="FloatActionButtonBasis" parent="Widget.Design.FloatingActionButton">
+        style="?android:attr/borderlessButtonStyle"
+        <item name="elevation">0dp</item>
+        <item name="fabCustomSize">40dp</item>
+        <item name="fabSize">mini</item>
+        <item name="android:clickable">true</item>
+        <item name="android:src">@drawable/ic_doors_white</item>
+        <item name="borderWidth">2.5dp</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:backgroundTintMode">src_in</item>
+    </style>
+
+
+
+
+    <style name="FloatActionButton_Blue" parent="FloatActionButtonBasis">
+        <item name="backgroundTint">@color/BluelineColor</item>
+        <item name="android:backgroundTint">@color/BackgroundTintBlue</item>
+    </style>
+    <style name="FloatActionButtonMini_Blue" parent="FloatActionButton_Blue">
+        <item name="fabCustomSize">30dp</item>>
+    </style>
+
+
+
+    <style name="FloatActionButton_Red" parent="FloatActionButtonBasis">
+        <item name="backgroundTint">@color/RedLineColor</item>
+        <item name="android:backgroundTint">@color/BackgroundTintRed</item>
+    </style>
+    <style name="FloatActionButtonMini_Red" parent="FloatActionButton_Red">
+        <item name="fabCustomSize">30dp</item>>
+    </style>
+
+    <style name="FloatActionButton_Red_leftDoors" parent="FloatActionButton_Red">
+        <item name="android:src">@drawable/ic_doors_white_left</item>
+    </style>
+
+    <style name="FloatActionButton_Green" parent="FloatActionButtonBasis">
+        <item name="android:backgroundTint">@color/BackgroundTintGreen</item>
+        <item name="backgroundTint">@color/GreenLineColor</item>
+    </style>
+    <style name="FloatActionButtonMini_Green" parent="FloatActionButton_Green">
+        <item name="fabCustomSize">30dp</item>>
     </style>
 
 

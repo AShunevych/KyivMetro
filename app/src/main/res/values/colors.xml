@@ -4,13 +4,24 @@
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#d50000</color>
     <color name="ColorAlternative">#fff</color>
-    <color name="TextColor">#000</color>
 
+    <color name="vectorColor">#000000</color>
+    <color name="backgroundColor">#ffffff</color>
 
     <color name="rippleColor">#80000000</color>
     <color name="transparent_black">#80000000</color>
     <color name="buttonColor">#3e2f5b</color>
-    <color name="GreenLineColor">#228B22</color>
-    <color name="RedLineColor">#d90429</color>
-    <color name="BluelineColor">#0000FF</color>
+
+    <color name="GreenLineColor">#00701a</color>
+    <color name="BackgroundTintGreen">#43a047</color>
+
+    <color name="RedLineColor">#ad0000</color>
+    <color name="BackgroundTintRed">#e81224</color>
+
+    <color name="BluelineColor">#00295b</color>
+    <color name="BackgroundTintBlue">#657db9</color>
+
+
+    <color name="solidSearch">#909ea7aa</color>
+
 </resources>

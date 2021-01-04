@@ -45,15 +45,24 @@
         android:layout_height="wrap_content"
         android:layout_alignTop="@+id/stationView"
         android:layout_marginEnd="8dp"
-        android:backgroundTint="@android:color/transparent"
+        android:backgroundTint="@color/backgroundColor"
         android:clickable="true"
-        app:borderWidth="1dp"
+        app:backgroundTint="@color/vectorColor"
         app:elevation="0dp"
-        app:fabSize="mini"
+         app:fabCustomSize="40dp"
         app:layout_constraintBottom_toBottomOf="@+id/lineView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@+id/stationView"
-        app:srcCompat="@drawable/ic_arrow_forward_black_24dp" />
+        app:srcCompat="@drawable/ic_show_result" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="8dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintTop_toBottomOf="@+id/lineView"
+        tools:layout_editor_absoluteX="5dp" />
 
 
 </android.support.constraint.ConstraintLayout>

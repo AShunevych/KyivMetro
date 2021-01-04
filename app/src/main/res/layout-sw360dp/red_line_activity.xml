@@ -28,6 +28,7 @@
                 style="@style/TextAppearance_FragmentText"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
                 android:layout_marginTop="8dp"
                 android:gravity="center"
                 android:text="@string/Akademmistechko"
@@ -40,10 +41,8 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
-                android:layout_marginEnd="2dp"
                 android:gravity="center"
                 android:text="@string/Zhytomyrska"
-                android:textSize="10sp"
                 app:layout_constraintEnd_toStartOf="@+id/view1"
                 app:layout_constraintTop_toBottomOf="@+id/akadem" />
 
@@ -55,7 +54,6 @@
                 android:layout_marginTop="8dp"
                 android:layout_marginEnd="2dp"
                 android:text="@string/Sviatoshyn"
-                android:textSize="12sp"
                 app:layout_constraintEnd_toStartOf="@+id/view1"
                 app:layout_constraintTop_toBottomOf="@+id/zhyto" />
 
@@ -68,7 +66,6 @@
                 android:layout_marginTop="8dp"
                 android:layout_marginEnd="2dp"
                 android:text="@string/Nyvky"
-                android:textSize="12sp"
                 app:layout_constraintEnd_toStartOf="@+id/view1"
                 app:layout_constraintTop_toBottomOf="@+id/sviatoshyn" />
 
@@ -81,7 +78,6 @@
                 android:layout_marginEnd="2dp"
                 android:gravity="center"
                 android:text="@string/Vokzalna"
-                android:textSize="12sp"
                 app:layout_constraintEnd_toStartOf="@+id/view1"
                 app:layout_constraintTop_toBottomOf="@+id/politech" />
 
@@ -93,7 +89,6 @@
                 android:layout_marginTop="8dp"
                 android:layout_marginEnd="2dp"
                 android:text="@string/Universytet"
-                android:textSize="12sp"
                 app:layout_constraintEnd_toStartOf="@+id/view1"
                 app:layout_constraintTop_toBottomOf="@+id/vokzal" />
 
@@ -106,7 +101,6 @@
                 android:layout_marginEnd="2dp"
                 android:gravity="center"
                 android:text="@string/Teatralna"
-                android:textSize="12sp"
                 app:layout_constraintEnd_toStartOf="@+id/view1"
                 app:layout_constraintTop_toBottomOf="@+id/univer" />
 
@@ -141,7 +135,6 @@
                 android:layout_marginTop="8dp"
                 android:layout_marginEnd="2dp"
                 android:text="@string/Khreshchatyk"
-                android:textSize="12sp"
                 app:layout_constraintEnd_toEndOf="@+id/view1"
                 app:layout_constraintEnd_toStartOf="@+id/view1"
                 app:layout_constraintTop_toBottomOf="@+id/teatr" />
@@ -154,7 +147,6 @@
                 android:layout_marginTop="8dp"
                 android:layout_marginEnd="2dp"
                 android:text="@string/Arsenalna"
-                android:textSize="12sp"
                 app:layout_constraintEnd_toStartOf="@+id/view1"
                 app:layout_constraintTop_toBottomOf="@+id/krest" />
 
@@ -178,7 +170,6 @@
                 android:layout_marginTop="8dp"
                 android:layout_marginEnd="2dp"
                 android:text="@string/Hidropark"
-                android:textSize="12sp"
                 app:layout_constraintEnd_toStartOf="@+id/view1"
                 app:layout_constraintTop_toBottomOf="@+id/dnipro" />
 
@@ -192,7 +183,6 @@
                 android:layout_marginEnd="2dp"
                 android:gravity="center"
                 android:text="@string/Livoberezhna"
-                android:textSize="12sp"
                 app:layout_constraintEnd_toStartOf="@+id/view1"
                 app:layout_constraintTop_toBottomOf="@+id/park" />
 
@@ -205,7 +195,6 @@
                 android:layout_marginTop="8dp"
                 android:layout_marginEnd="2dp"
                 android:text="@string/Darnytsia"
-                android:textSize="12sp"
                 app:layout_constraintEnd_toStartOf="@+id/view1"
                 app:layout_constraintTop_toBottomOf="@+id/livoberezhna" />
 
@@ -219,7 +208,6 @@
                 android:layout_marginEnd="2dp"
                 android:gravity="center_horizontal"
                 android:text="@string/Lisova"
-                android:textSize="12sp"
                 app:layout_constraintEnd_toStartOf="@+id/view1"
                 app:layout_constraintTop_toBottomOf="@+id/chernihiv" />
 
@@ -233,7 +221,6 @@
                 android:layout_marginEnd="2dp"
                 android:gravity="center_horizontal"
                 android:text="@string/Chernihivska"
-                android:textSize="12sp"
                 app:layout_constraintEnd_toStartOf="@+id/view1"
                 app:layout_constraintTop_toBottomOf="@+id/darnytsia" />
 
@@ -259,7 +246,6 @@
                 android:layout_marginEnd="2dp"
                 android:gravity="center"
                 android:text="@string/Beresteiska"
-                android:textSize="11sp"
                 app:layout_constraintEnd_toStartOf="@+id/view1"
                 app:layout_constraintTop_toBottomOf="@+id/nyvky" />
 
@@ -285,7 +271,6 @@
                 android:layout_marginEnd="8dp"
                 android:gravity="center|center_horizontal|center_vertical"
                 android:text="@string/red_line_name"
-                android:textSize="12sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
@@ -302,7 +287,7 @@
 
             <View
                 android:id="@+id/view6"
-                android:layout_width="7.5dp"
+                android:layout_width="20dp"
                 android:layout_height="4dp"
                 android:background="@drawable/red_rect"
                 app:layout_constraintBottom_toBottomOf="@+id/teatr"
@@ -311,7 +296,7 @@
 
             <View
                 android:id="@+id/view10"
-                android:layout_width="7.5dp"
+                android:layout_width="20dp"
                 android:layout_height="4dp"
                 android:background="@drawable/red_rect"
                 app:layout_constraintBottom_toBottomOf="@+id/krest"
@@ -320,7 +305,7 @@
 
             <View
                 android:id="@+id/view9"
-                android:layout_width="7.5dp"
+                android:layout_width="20dp"
                 android:layout_height="4dp"
                 android:background="@drawable/green_rect"
                 app:layout_constraintBottom_toBottomOf="@+id/teatr"
@@ -329,7 +314,7 @@
 
             <View
                 android:id="@+id/view11"
-                android:layout_width="7.5dp"
+                android:layout_width="20dp"
                 android:layout_height="4dp"
                 android:background="@drawable/blue_rect"
                 app:layout_constraintBottom_toBottomOf="@+id/view10"

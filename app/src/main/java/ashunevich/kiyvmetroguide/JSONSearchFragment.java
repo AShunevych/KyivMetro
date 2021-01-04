@@ -1,48 +1,64 @@
 package ashunevich.kiyvmetroguide;
 
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
+import android.support.annotation.NonNull;
+import android.support.v4.app.Fragment;
 import android.support.v7.widget.LinearLayoutManager;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.util.Log;
+import android.view.LayoutInflater;
 import android.view.View;
+import android.view.ViewGroup;
 
 import com.google.gson.Gson;
 
+import org.greenrobot.eventbus.EventBus;
 import org.json.JSONArray;
 import org.json.JSONObject;
 
 import java.util.ArrayList;
 import java.util.Locale;
 
-
 import ashunevich.kiyvmetroguide.databinding.SearchActivityBinding;
 
-public class JSONSearchActivity extends AppCompatActivity {
-    String TAG = JSONSearchActivity.class.getSimpleName();
+public class JSONSearchFragment extends Fragment {
+    String TAG = JSONSearchFragment.class.getSimpleName();
     private String LOCALE;
     private final ArrayList<JSONSearchItem> listContentArr = new ArrayList<>();
     JSONSearchItem item = new JSONSearchItem();
     JSONSearchItemAdapter adapter;
     private SearchActivityBinding binding;
 
-
+    public JSONSearchFragment() {
+        // Required empty public constructor
+    }
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        binding = SearchActivityBinding.inflate(getLayoutInflater());
+    }
+
+    @Override
+    public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container,
+                             Bundle savedInstanceState) {
+        // Inflate the layout for this fragment
+        binding = SearchActivityBinding.inflate(inflater, container, false);
         View view = binding.getRoot();
-        setContentView(view);
         LOCALE = Locale.getDefault().getDisplayLanguage();
-        binding.jsonRecycler.setLayoutManager(new LinearLayoutManager(this));
+        binding.jsonRecycler.setLayoutManager(new LinearLayoutManager(requireContext()));
         adapter = new JSONSearchItemAdapter(listContentArr);
         binding.jsonRecycler.setHasFixedSize(true);
         buildRecyclerWithJson();
         binding.filterTextView.addTextChangedListener(watcher);
+        return view;
     }
 
+    @Override
+    public void onDestroyView() {
+        binding = null;
+        super.onDestroyView();
+    }
 
     TextWatcher watcher = new TextWatcher() {
         @Override
@@ -85,7 +101,7 @@ public class JSONSearchActivity extends AppCompatActivity {
 
     private void loadJsonToRecycler(String loadJSON)  {
         try {
-            JSONObject jsonObject = new JSONObject(Utils.loadJsonEvent(loadJSON,this));
+            JSONObject jsonObject = new JSONObject(Utils.loadJsonEvent(loadJSON,requireContext()));
             JSONArray message = jsonObject.getJSONArray("Station");
             Gson gson =new Gson();
             for (int i = 0; i <= message.length(); i++) {
@@ -96,14 +112,11 @@ public class JSONSearchActivity extends AppCompatActivity {
                 adapter.setListContent(listContentArr);
                 binding.jsonRecycler.setAdapter(adapter);
             }
-    } catch (Exception ex) {
-        Log.e(TAG, ex.getMessage());
-    }
+        } catch (Exception ex) {
+            Log.e(TAG, ex.getMessage());
+        }
 
 
     }
-
-
 
 }
-

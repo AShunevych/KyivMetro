@@ -48,6 +48,7 @@ public class RedLineFragment extends Fragment {
     }
 
     //Buttons click listeners
+    @SuppressWarnings("ConstantConditions")
     private void setRedLineButtonsBindings(){
         binding.akadem.setOnClickListener (v -> Utils.setStationInfo(getResources().getString(R.string.Akademmistechko), CURRENT_LOCALE, busEvent,requireContext()));
         binding.zhyto.setOnClickListener (v -> Utils.setStationInfo(getResources().getString(R.string.Zhytomyrska), CURRENT_LOCALE, busEvent,requireContext()));
@@ -66,8 +67,8 @@ public class RedLineFragment extends Fragment {
         binding.livoberezhna.setOnClickListener (v -> Utils.setStationInfo(getResources().getString(R.string.Livoberezhna), CURRENT_LOCALE, busEvent,requireContext()));
         binding.darnytsia.setOnClickListener (v -> Utils.setStationInfo(getResources().getString(R.string.Darnytsia), CURRENT_LOCALE, busEvent,requireContext()));
         binding.chernihiv.setOnClickListener (v -> Utils.setStationInfo(getResources().getString(R.string.Chernihivska), CURRENT_LOCALE, busEvent,requireContext()));
-        binding.lisova.setOnClickListener (v -> Utils.setStationInfo(getResources().getString(R.string.Lisova), CURRENT_LOCALE, busEvent,requireContext()));
-
+        binding.redBlueTransfer.setOnClickListener (v -> Utils.setStationInfo(getResources().getString(R.string.MaidanJSON), CURRENT_LOCALE, busEvent,requireContext()));
+        binding.redGreenTransfer.setOnClickListener (v -> Utils.setStationInfo(getResources().getString(R.string.Vorota), CURRENT_LOCALE, busEvent,requireContext()));
     }
 
 }

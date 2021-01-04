@@ -65,6 +65,8 @@ public class BlueLineFragment extends Fragment {
         binding.Vystavkovyi.setOnClickListener (v -> Utils.setStationInfo(getResources().getString(R.string.VystavkovyiJSON),LOCALE,bus,requireContext()));
         binding.Ipodrom.setOnClickListener (v -> Utils.setStationInfo(getResources().getString(R.string.Ipodrom),LOCALE,bus,requireContext()));
         binding.Teremnky.setOnClickListener (v -> Utils.setStationInfo(getResources().getString(R.string.Teremky),LOCALE,bus,requireContext()));
+        binding.BlueGreenTransfer.setOnClickListener (v -> Utils.setStationInfo(getResources().getString(R.string.PalatsSportu),LOCALE,bus,requireContext()));
+        binding.BlueRedTransfer.setOnClickListener (v -> Utils.setStationInfo(getResources().getString(R.string.Khreshchatyk),LOCALE,bus,requireContext()));
     }
 
 }

@@ -4,7 +4,7 @@
     <string name="Syrets">Syrets</string>
     <string name="Dorohozhychi">Dorohozhychi</string>
     <string name="Lukianivska">Lukianivska</string>
-    <string name="Vorota">Zoloti Vorota </string>
+    <string name="Vorota">Zoloti Vorota</string>
     <string name="PalatsSportu">Palats Sportu</string>
     <string name="Klovska">Klovska</string>
     <string name="Pecherska">Pecherska</string>
@@ -16,8 +16,11 @@
     <string name="Kharkivska">Kharkivska</string>
     <string name="Vyrlytsia">Vyrlytsia</string>
     <string name="Boryspilska">Boryspilska</string>
-    <string name="Chervony_Khutir">Chervony Khutir</string>
+    <string name="Chervony_Khutir">Chervony\nKhutir</string>
 
+    <string name="VorotaSpaced">Zoloti\nVorota</string>
+    <string name="PalatsSportuSpaced">Palats\nSportu</string>
+    <string name="DruzhbySpaced">Druzhby\nNarodiv</string>
     <string name="DruzhbyJSON">Druzhby Narodiv</string>
     <string name="KhutirJSON">Chervony Khutir</string>
 

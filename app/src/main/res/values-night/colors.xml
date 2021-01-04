@@ -2,4 +2,20 @@
 <resources>
     <color name="rippleColor">#fff</color>
     <color name="colorAccent">#FF8A80</color>
+
+    <color name="BackgroundTintGreen">#00701a</color>
+    <color name="GreenLineColor">#76d275</color>
+
+    <color name="BackgroundTintRed">#770a00</color>
+    <color name="RedLineColor">#ff1600</color>
+
+    <color name="BluelineColor">#8fb9ff</color>
+    <color name="BackgroundTintBlue">#1565c0</color>
+
+
+    <color name="backgroundColor">#121212</color>
+    <color name="vectorColor">#efefef</color>
+
+    <color name="solidSearch">#424242</color>
+
 </resources>

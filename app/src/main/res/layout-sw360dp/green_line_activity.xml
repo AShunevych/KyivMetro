@@ -25,30 +25,14 @@
 
             <android.support.design.widget.FloatingActionButton
                 android:id="@+id/GreenRedTransfer"
-                style="?android:attr/borderlessButtonStyle"
-                android:layout_width="25dp"
-                android:layout_height="wrap_content"
-                android:backgroundTint="@android:color/transparent"
-                android:clickable="true"
-                app:backgroundTint="@color/RedLineColor"
-                app:borderWidth="2.5dp"
-                app:elevation="0dp"
-                app:fabSize="mini"
+                style="@style/FloatActionButtonMini_Red"
                 app:layout_constraintBottom_toBottomOf="@+id/view3"
                 app:layout_constraintEnd_toStartOf="@+id/view3"
                 app:layout_constraintTop_toTopOf="@+id/view3" />
 
             <android.support.design.widget.FloatingActionButton
                 android:id="@+id/GreenBlueTransfer"
-                style="?android:attr/borderlessButtonStyle"
-                android:layout_width="25dp"
-                android:layout_height="wrap_content"
-                android:backgroundTint="@android:color/transparent"
-                android:clickable="true"
-                app:backgroundTint="@color/BluelineColor"
-                app:borderWidth="2.5dp"
-                app:elevation="0dp"
-                app:fabSize="mini"
+                style="@style/FloatActionButtonMini_Blue"
                 app:layout_constraintBottom_toBottomOf="@+id/view5"
                 app:layout_constraintEnd_toStartOf="@+id/view5"
                 app:layout_constraintTop_toTopOf="@+id/view5" />
@@ -62,7 +46,6 @@
                 android:layout_marginTop="8dp"
                 android:gravity="center"
                 android:text="@string/Syrets"
-                android:textSize="12sp"
                 app:layout_constraintStart_toStartOf="@+id/textView16"
                 app:layout_constraintTop_toBottomOf="@+id/textView27" />
 
@@ -71,10 +54,9 @@
                 style="@style/TextAppearance_FragmentText"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="4dp"
+                android:layout_marginTop="8dp"
                 android:gravity="center"
                 android:text="@string/Dorohozhychi"
-                android:textSize="11sp"
                 app:layout_constraintStart_toEndOf="@+id/view1"
                 app:layout_constraintTop_toBottomOf="@+id/Syrets" />
 
@@ -83,9 +65,8 @@
                 style="@style/TextAppearance_FragmentText"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="4dp"
+                android:layout_marginTop="8dp"
                 android:text="@string/Lukianivska"
-                android:textSize="11sp"
                 app:layout_constraintStart_toEndOf="@+id/view1"
                 app:layout_constraintTop_toBottomOf="@+id/doroh" />
 
@@ -96,9 +77,8 @@
                 android:layout_height="wrap_content"
 
                 android:layout_marginStart="2dp"
-                android:layout_marginTop="4dp"
+                android:layout_marginTop="8dp"
                 android:text="@string/VorotaSpaced"
-                android:textSize="12sp"
                 app:layout_constraintStart_toEndOf="@+id/view1"
                 app:layout_constraintTop_toBottomOf="@+id/lukyanivska" />
 
@@ -107,10 +87,9 @@
                 style="@style/TextAppearance_FragmentText"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="4dp"
+                android:layout_marginTop="7dp"
                 android:gravity="center"
                 android:text="@string/DruzhbySpaced"
-                android:textSize="12sp"
                 app:layout_constraintStart_toEndOf="@+id/view1"
                 app:layout_constraintTop_toBottomOf="@+id/pecherska" />
 
@@ -133,7 +112,6 @@
                 android:layout_marginTop="4dp"
                 android:gravity="center"
                 android:text="@string/Slavutych"
-                android:textSize="12sp"
                 app:layout_constraintStart_toEndOf="@+id/view1"
                 app:layout_constraintTop_toBottomOf="@+id/vydubychi" />
 
@@ -145,7 +123,6 @@
                 android:layout_marginStart="2dp"
                 android:layout_marginTop="4dp"
                 android:text="@string/Osokorky"
-                android:textSize="12sp"
                 app:layout_constraintStart_toEndOf="@+id/view1"
                 app:layout_constraintTop_toBottomOf="@+id/slavutych" />
 
@@ -157,7 +134,6 @@
                 android:layout_marginStart="2dp"
                 android:layout_marginTop="4dp"
                 android:text="@string/Pozniaky"
-                android:textSize="12sp"
                 app:layout_constraintStart_toEndOf="@+id/view1"
                 app:layout_constraintTop_toBottomOf="@+id/osokorky" />
 
@@ -169,7 +145,6 @@
                 android:layout_marginStart="2dp"
                 android:layout_marginTop="4dp"
                 android:text="@string/Kharkivska"
-                android:textSize="12sp"
                 app:layout_constraintStart_toEndOf="@+id/view1"
                 app:layout_constraintTop_toBottomOf="@+id/pozniaky" />
 
@@ -180,7 +155,6 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="4dp"
                 android:text="@string/Vyrlytsia"
-                android:textSize="12sp"
                 app:layout_constraintStart_toEndOf="@+id/view1"
                 app:layout_constraintTop_toBottomOf="@+id/kharkiv" />
 
@@ -205,7 +179,6 @@
                 android:layout_marginStart="2dp"
                 android:layout_marginTop="4dp"
                 android:gravity="center_horizontal"
-                android:paddingBottom="8dp"
                 android:text="@string/Chervony_Khutir"
                 app:layout_constraintStart_toEndOf="@+id/view1"
                 app:layout_constraintTop_toBottomOf="@+id/boryspil" />
@@ -216,10 +189,9 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
 
-                android:layout_marginTop="4dp"
+                android:layout_marginTop="8dp"
                 android:gravity="center"
                 android:text="@string/Pecherska"
-                android:textSize="12sp"
                 app:layout_constraintStart_toEndOf="@+id/view1"
                 app:layout_constraintTop_toBottomOf="@+id/klovska" />
 
@@ -228,10 +200,9 @@
                 style="@style/TextAppearance_FragmentText"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="4dp"
+                android:layout_marginTop="8dp"
                 android:gravity="center"
                 android:text="@string/PalatsSportuSpaced"
-                android:textSize="12sp"
                 app:layout_constraintStart_toEndOf="@+id/view1"
                 app:layout_constraintTop_toBottomOf="@+id/vorota" />
 
@@ -240,24 +211,22 @@
                 style="@style/TextAppearance_FragmentText"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginEnd="4dp"
                 android:gravity="center"
                 android:text="@string/LvaShort"
                 android:textSize="10sp"
                 app:layout_constraintBottom_toTopOf="@+id/GreenBlueTransfer"
-                app:layout_constraintEnd_toEndOf="@+id/view4" />
+                app:layout_constraintStart_toStartOf="@+id/GreenBlueTransfer" />
 
             <TextView
                 android:id="@+id/textView18"
                 style="@style/TextAppearance_FragmentText"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginEnd="4dp"
                 android:gravity="center"
                 android:text="@string/Teatralna"
                 android:textSize="10sp"
                 app:layout_constraintBottom_toTopOf="@+id/GreenRedTransfer"
-                app:layout_constraintEnd_toEndOf="@+id/view4" />
+                app:layout_constraintStart_toStartOf="@+id/GreenRedTransfer" />
 
             <TextView
                 android:id="@+id/textView19"
@@ -267,7 +236,6 @@
                 android:layout_marginTop="4dp"
                 android:gravity="center"
                 android:text="@string/Klovska"
-                android:textSize="12sp"
                 app:layout_constraintStart_toEndOf="@+id/view1"
                 app:layout_constraintTop_toBottomOf="@+id/palats" />
 
@@ -281,7 +249,6 @@
                 android:layout_marginEnd="8dp"
                 android:gravity="center|center_horizontal|center_vertical"
                 android:text="@string/green_line_name"
-                android:textSize="12sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
@@ -299,7 +266,7 @@
 
             <View
                 android:id="@+id/view2"
-                android:layout_width="10dp"
+                android:layout_width="20dp"
                 android:layout_height="4dp"
                 android:background="@drawable/green_rect"
                 app:layout_constraintBottom_toBottomOf="@+id/vorota"
@@ -308,7 +275,7 @@
 
             <View
                 android:id="@+id/view4"
-                android:layout_width="10dp"
+                android:layout_width="20dp"
                 android:layout_height="4dp"
                 android:background="@drawable/green_rect"
                 app:layout_constraintBottom_toBottomOf="@+id/palats"
@@ -317,7 +284,7 @@
 
             <View
                 android:id="@+id/view3"
-                android:layout_width="10dp"
+                android:layout_width="20dp"
                 android:layout_height="4dp"
                 android:background="@drawable/red_rect"
                 app:layout_constraintBottom_toBottomOf="@+id/view2"
@@ -326,7 +293,7 @@
 
             <View
                 android:id="@+id/view5"
-                android:layout_width="10dp"
+                android:layout_width="20dp"
                 android:layout_height="4dp"
                 android:background="@color/BluelineColor"
                 app:layout_constraintBottom_toBottomOf="@+id/palats"

@@ -27,7 +27,7 @@
                 style="@style/TextAppearance_FragmentText"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="4dp"
+                android:layout_marginTop="8dp"
                 android:gravity="center"
                 android:text="@string/Heroiv_Dnipra"
                 app:layout_constraintStart_toStartOf="@+id/heroiv"
@@ -38,11 +38,10 @@
                 style="@style/TextAppearance_FragmentText"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="4dp"
+                android:layout_marginTop="8dp"
                 android:layout_marginEnd="2dp"
                 android:gravity="center"
                 android:text="@string/Minska"
-                android:textSize="12sp"
                 app:layout_constraintEnd_toStartOf="@+id/view7"
                 app:layout_constraintTop_toBottomOf="@+id/heroiv" />
 
@@ -52,9 +51,8 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="2dp"
-                android:layout_marginTop="4dp"
+                android:layout_marginTop="8dp"
                 android:text="@string/Obolon"
-                android:textSize="12sp"
                 app:layout_constraintStart_toEndOf="@+id/view7"
                 app:layout_constraintTop_toBottomOf="@+id/minska" />
 
@@ -64,10 +62,9 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
 
-                android:layout_marginTop="4dp"
+                android:layout_marginTop="8dp"
                 android:layout_marginEnd="2dp"
                 android:text="@string/Pochaina"
-                android:textSize="12sp"
                 app:layout_constraintEnd_toStartOf="@+id/view7"
                 app:layout_constraintTop_toBottomOf="@+id/Obolon" />
 
@@ -78,10 +75,9 @@
 
                 android:layout_height="wrap_content"
 
-                android:layout_marginTop="4dp"
+                android:layout_marginTop="8dp"
                 android:layout_marginEnd="2dp"
                 android:text="@string/Poshtova"
-                android:textSize="12sp"
                 app:layout_constraintEnd_toStartOf="@+id/view7"
                 app:layout_constraintTop_toBottomOf="@+id/Kontraktova" />
 
@@ -90,10 +86,9 @@
                 style="@style/TextAppearance_FragmentText"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="4dp"
+                android:layout_marginTop="8dp"
                 android:layout_marginEnd="2dp"
                 android:text="@string/LvaShort"
-                android:textSize="12sp"
                 app:layout_constraintEnd_toStartOf="@+id/view7"
                 app:layout_constraintTop_toBottomOf="@+id/Maidan" />
 
@@ -113,10 +108,10 @@
                 style="@style/TextAppearance_FragmentText"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="6dp"
+                android:layout_marginStart="10dp"
                 android:layout_marginBottom="2dp"
                 android:text="@string/PalatsSportuSpaced"
-                android:textSize="11sp"
+                android:textSize="12sp"
                 app:layout_constraintBottom_toTopOf="@+id/BlueGreenTransfer"
                 app:layout_constraintStart_toEndOf="@+id/view28" />
 
@@ -125,10 +120,9 @@
                 style="@style/TextAppearance_FragmentText"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="2dp"
-                android:layout_marginTop="4dp"
+                android:layout_marginStart="11dp"
+                android:layout_marginTop="8dp"
                 android:text="@string/Olimpiiska"
-                android:textSize="12sp"
                 app:layout_constraintStart_toEndOf="@+id/view7"
                 app:layout_constraintTop_toBottomOf="@+id/LvaTolstoga" />
 
@@ -137,10 +131,9 @@
                 style="@style/TextAppearance_FragmentText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="4dp"
+                android:layout_marginTop="8dp"
                 android:layout_marginEnd="2dp"
                 android:text="@string/Palats"
-                android:textSize="12sp"
                 app:layout_constraintEnd_toStartOf="@+id/view7"
                 app:layout_constraintTop_toBottomOf="@+id/Olimpiiska" />
 
@@ -149,11 +142,9 @@
                 style="@style/TextAppearance_FragmentText"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="2dp"
-                android:layout_marginTop="4dp"
+                android:layout_marginTop="8dp"
                 android:text="@string/Lybidska"
-                android:textSize="12sp"
-                app:layout_constraintStart_toEndOf="@+id/view7"
+                app:layout_constraintEnd_toEndOf="@+id/textView8"
                 app:layout_constraintTop_toBottomOf="@+id/PalatsUA" />
 
             <TextView
@@ -161,7 +152,7 @@
                 style="@style/TextAppearance_FragmentText"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="4dp"
+                android:layout_marginTop="8dp"
                 android:text="@string/Demiivska"
                 app:layout_constraintEnd_toStartOf="@+id/view7"
                 app:layout_constraintTop_toBottomOf="@+id/lybidska" />
@@ -172,9 +163,8 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="2dp"
-                android:layout_marginTop="4dp"
+                android:layout_marginTop="8dp"
                 android:text="@string/Holosiivska"
-                android:textSize="12sp"
                 app:layout_constraintStart_toEndOf="@+id/view7"
                 app:layout_constraintTop_toBottomOf="@+id/Demiivska" />
 
@@ -183,10 +173,9 @@
                 style="@style/TextAppearance_FragmentText"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="4dp"
+                android:layout_marginTop="8dp"
                 android:layout_marginEnd="4dp"
                 android:text="@string/Vasylkivska"
-                android:textSize="12sp"
                 app:layout_constraintEnd_toEndOf="@+id/view7"
                 app:layout_constraintTop_toBottomOf="@+id/Holosiivska" />
 
@@ -197,9 +186,8 @@
 
                 android:layout_height="wrap_content"
                 android:layout_marginStart="2dp"
-                android:layout_marginTop="4dp"
+                android:layout_marginTop="8dp"
                 android:text="@string/Vystavkovyi"
-                android:textSize="12sp"
                 app:layout_constraintStart_toEndOf="@+id/view7"
                 app:layout_constraintTop_toBottomOf="@+id/Vasylkiivska" />
 
@@ -209,7 +197,7 @@
                 android:layout_width="0dp"
 
                 android:layout_height="wrap_content"
-                android:layout_marginTop="4dp"
+                android:layout_marginTop="8dp"
                 android:layout_marginEnd="4dp"
                 android:text="@string/Ipodrom"
                 app:layout_constraintEnd_toEndOf="@+id/view7"
@@ -222,7 +210,7 @@
 
                 android:layout_height="wrap_content"
                 android:layout_marginStart="1dp"
-                android:layout_marginTop="4dp"
+                android:layout_marginTop="8dp"
                 android:gravity="center_horizontal"
                 android:paddingBottom="8dp"
                 android:text="@string/Teremky"
@@ -235,9 +223,10 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
 
-                android:layout_marginTop="4dp"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="8dp"
                 android:text="@string/Maidan"
-                android:textSize="11sp"
+                android:textSize="13sp"
                 app:layout_constraintStart_toEndOf="@+id/view7"
                 app:layout_constraintTop_toBottomOf="@+id/Poshtova" />
 
@@ -247,9 +236,8 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="2dp"
-                android:layout_marginTop="4dp"
+                android:layout_marginTop="8dp"
                 android:text="@string/Kontraktova"
-                android:textSize="12sp"
                 app:layout_constraintStart_toEndOf="@+id/view7"
                 app:layout_constraintTop_toBottomOf="@+id/Pochaina" />
 
@@ -269,7 +257,7 @@
 
             <View
                 android:id="@+id/view25"
-                android:layout_width="7.5dp"
+                android:layout_width="20dp"
                 android:layout_height="4dp"
                 android:background="@drawable/blue_rect"
                 app:layout_constraintBottom_toBottomOf="@+id/Maidan"
@@ -278,7 +266,7 @@
 
             <View
                 android:id="@+id/view28"
-                android:layout_width="7.5dp"
+                android:layout_width="20dp"
                 android:layout_height="4dp"
                 android:background="@drawable/blue_rect"
                 app:layout_constraintBottom_toBottomOf="@+id/LvaTolstoga"
@@ -287,7 +275,7 @@
 
             <View
                 android:id="@+id/view29"
-                android:layout_width="7.5dp"
+                android:layout_width="20dp"
                 android:layout_height="4dp"
                 android:background="@drawable/green_rect"
                 app:layout_constraintBottom_toBottomOf="@+id/LvaTolstoga"
@@ -296,7 +284,7 @@
 
             <View
                 android:id="@+id/view26"
-                android:layout_width="7.5dp"
+                android:layout_width="20dp"
                 android:layout_height="4dp"
                 android:background="@drawable/red_rect"
                 app:layout_constraintBottom_toBottomOf="@+id/Maidan"
@@ -305,7 +293,7 @@
 
             <View
                 android:id="@+id/view7"
-                android:layout_width="4dp"
+                android:layout_width="5dp"
                 android:layout_height="0dp"
                 android:background="@drawable/blue_rect"
                 app:layout_constraintBottom_toTopOf="@+id/Teremnky"
@@ -325,9 +313,11 @@
             <android.support.design.widget.FloatingActionButton
                 android:id="@+id/BlueRedTransfer"
                 style="@style/FloatActionButtonMini_Red"
-                app:layout_constraintBottom_toBottomOf="@+id/Maidan"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="@+id/view26"
                 app:layout_constraintEnd_toStartOf="@+id/view26"
-                app:layout_constraintTop_toTopOf="@+id/Maidan" />
+                app:layout_constraintTop_toTopOf="@+id/view26"
+                app:layout_constraintVertical_bias="0.523" />
 
             <android.support.design.widget.FloatingActionButton
                 android:id="@+id/BlueGreenTransfer"

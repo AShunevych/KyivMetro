@@ -8,7 +8,7 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
+        android:theme="@style/AppThemeDefaultNoBar">
 
         <activity android:name=".MainActivity"
             android:screenOrientation="portrait">
@@ -18,28 +18,14 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".JSONSearchActivity"
-            android:parentActivityName=".MainActivity"
-            android:screenOrientation="portrait"
-            android:label="@string/search"
-          >
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MainActivity" />
-
-            <intent-filter>
-                <action android:name="android.intent.action.VIEW" />
-            </intent-filter>
-        </activity>
-
         <activity android:name=".SearchResultActivity"
-            android:parentActivityName=".JSONSearchActivity"
+            android:parentActivityName=".MainActivity"
             android:screenOrientation="portrait"
             android:label="@string/searchRes"
             >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".JSONSearchActivity" />
+                android:value=".MainActivity" />
 
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />

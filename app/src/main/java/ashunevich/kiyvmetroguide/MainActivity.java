@@ -37,11 +37,13 @@ public class MainActivity extends AppCompatActivity {
         adapter.addFragment(new RedLineFragment(),null);
         adapter.addFragment(new BlueLineFragment(),null);
         adapter.addFragment(new GreenLineFragment(),null);
+        adapter.addFragment(new JSONSearchFragment(),null);
         binding.viewPager.setAdapter(adapter);
         binding.tabLayout.setupWithViewPager(binding.viewPager);
         binding.tabLayout.getTabAt(0).setIcon(R.drawable.ic_red_line_ring);
         binding.tabLayout.getTabAt(1).setIcon(R.drawable.ic_blue_line_logo);
         binding.tabLayout.getTabAt(2).setIcon(R.drawable.ic_green_line_logo);
+        binding.tabLayout.getTabAt(3).setIcon(R.drawable.ic_filter);
         bus = EventBus.getDefault();
         setTabListener();
     }
@@ -71,27 +73,6 @@ public class MainActivity extends AppCompatActivity {
             });
 
     }
-
-    public boolean onCreateOptionsMenu(Menu menu) {
-        MenuInflater inflater = getMenuInflater();
-        inflater.inflate(R.menu.menu, menu);
-
-        return true;
-
-    }
-
-
-    @SuppressLint("NonConstantResourceId")
-    public boolean onOptionsItemSelected(MenuItem item) {
-        if (item.getItemId() == R.id.switchToSearch) {
-            Intent intent = new Intent(MainActivity.this, JSONSearchActivity.class);
-            startActivity(intent);
-            return true;
-        }
-        return super.onOptionsItemSelected(item);
-    }
-
-
 
 
     static class ViewPagerAdapter extends FragmentPagerAdapter {

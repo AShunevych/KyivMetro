@@ -16,7 +16,11 @@
     <string name="Kharkivska">Харківська</string>
     <string name="Vyrlytsia">Вирлиця</string>
     <string name="Boryspilska">Бориспільська</string>
-    <string name="Chervony_Khutir">Червоний Хутір</string>
+    <string name="Chervony_Khutir">Червоний\nХутір</string>
+
+    <string name="PalatsSportuSpaced">Палац\nспорту</string>
+    <string name="VorotaSpaced">Золоті\nВорота</string>
+    <string name="DruzhbySpaced">Дружби\nНародів</string>
 
     <string name="DruzhbyJSON">Дружби Народів</string>
     <string name="KhutirJSON">Червоний Хутір</string>

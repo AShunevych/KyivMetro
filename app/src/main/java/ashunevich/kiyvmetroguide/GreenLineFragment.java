@@ -62,6 +62,9 @@ public class GreenLineFragment extends Fragment {
         binding.vyrlytsia.setOnClickListener (v -> Utils.setStationInfo(getResources().getString(R.string.Vyrlytsia),LOCALE,bus,requireContext()));
         binding.boryspil.setOnClickListener (v -> Utils.setStationInfo(getResources().getString(R.string.Boryspilska),LOCALE,bus,requireContext()));
         binding.redhutir.setOnClickListener (v -> Utils.setStationInfo(getResources().getString(R.string.KhutirJSON),LOCALE,bus,requireContext()));
+        binding.GreenBlueTransfer.setOnClickListener (v -> Utils.setStationInfo(getResources().getString(R.string.LvaJSON),LOCALE,bus,requireContext()));
+        binding.GreenRedTransfer.setOnClickListener (v -> Utils.setStationInfo(getResources().getString(R.string.Teatralna),LOCALE,bus,requireContext()));
+
     }
 
 }
