@@ -341,7 +341,6 @@
                 android:id="@+id/akadem"
                 style="@style/FloatActionButton_Red"
                 android:layout_marginTop="4dp"
-                app:borderWidth="5dp"
                 app:layout_constraintEnd_toEndOf="@+id/textView27"
                 app:layout_constraintStart_toStartOf="@+id/textView27"
                 app:layout_constraintTop_toBottomOf="@+id/textView15"
@@ -450,7 +449,6 @@
             <android.support.design.widget.FloatingActionButton
                 android:id="@+id/lisova"
                 style="@style/FloatActionButton_Red"
-                app:borderWidth="5dp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="@+id/akadem"
                 app:layout_constraintHorizontal_bias="1.0"
