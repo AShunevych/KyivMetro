@@ -1,10 +1,10 @@
 # KyivMetro
  
 
-Java tesbed app - Kyiv Metro navigator
+Java tesbed app : implements RecyclerView + parsing JSON data from file using GSON, RecyclerView filter mechanism, communication beetween fragments using GreenRobot's EventBus. 
 
 Locales - Ukranian/English    
-Features: Fragments,JSON holder for station info, load/unload on button click, filter recyclerview mechanism    
+
 
 App screenshots:    
 <img src="https://github.com/AShunevich/KyivMetro/blob/master/src/20210104_203109.jpg" width="25%" height="30%" > | <img src="https://github.com/AShunevich/KyivMetro/blob/master/src/20210104_203049.jpg" width="25%" height="30%" > 
